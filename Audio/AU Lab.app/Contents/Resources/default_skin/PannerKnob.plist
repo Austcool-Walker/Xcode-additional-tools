@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LargeSize</key>
+	<dict>
+		<key>imageName</key>
+		<string>PannerKnobsHiDPI.pdf</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {42, 41}}</string>
+			<key>Hilight</key>
+			<string>{{42, 0}, {42, 41}}</string>
+			<key>InteriorMask</key>
+			<string>{{84, 0}, {42, 41}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+		<key>knobData</key>
+		<dict>
+			<key>center</key>
+			<string>{19.5, 21.5}</string>
+			<key>radius</key>
+			<integer>15</integer>
+		</dict>
+	</dict>
+	<key>SmallSize</key>
+	<dict>
+		<key>imageName</key>
+		<string>PannerKnobSmall.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {24, 21}}</string>
+			<key>Hilight</key>
+			<string>{{24, 0}, {24, 21}}</string>
+			<key>InteriorMask</key>
+			<string>{{48, 0}, {24, 21}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+		<key>knobData</key>
+		<dict>
+			<key>center</key>
+			<string>{12, 10.5}</string>
+			<key>radius</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

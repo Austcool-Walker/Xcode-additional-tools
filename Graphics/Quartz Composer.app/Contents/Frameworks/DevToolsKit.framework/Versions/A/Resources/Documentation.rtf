@@ -1,0 +1,375 @@
+{\rtf1\mac\ansicpg10000\cocoartf888\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs36 \cf0 Vocabulary\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\fs24 \cf0 Asset: 	
+\b0 Assets represent your content. They are represented by the little white squares in the library.
+\b \
+Group: 	
+\b0 Groups organize assets. Groups have relations to assets. Assets can be in many groups.
+\b \
+Library: 	
+\b0 The library is the controller that makes the view's display and edit the assets and groups.
+\b \
+Category: 
+\b0 	A category is a partition of the assets. Only one category of assets is visible at a time.
+\b \
+Source: 
+\b0 	An asset source is a source for assets in a category. All assets come from a single source.
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs36 \cf0 Getting Started\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+\cf0 1. Add at least one category to the library\
+2. Declare plugins \
+3. Add assets to plugins\
+4. Set an active category                    \
+5. Set the library's delegate\
+6. Tell the library to restore the users preferences\
+7. During application terminate, tell the library to record the user's preferences.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0     
+\b\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs36 \cf0 DTAsset
+\b0  \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs24 \cf0 This is the model object that is exposed to the client application. Every time the application starts, the application is expected to create assets and add them to the asset library. The assets must have stable, unique, identifiers.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Assets have the following properties
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSString *)identifier
+\b0 \cf0 \
+This is a string that should be unique among all assets. You can only set it at init time.\
+\
+
+\b \cf2 - (NSString *)assetSourceIdentifier
+\b0 \cf0 \
+This is the identifier of the asset source that was used to integrate this asset into its parent category.\
+\
+
+\b \cf2 - (DTAssetCategory *)assetCategory
+\b0 \cf0 \
+This is the category the asset lives in. It will be set for you upon adding the asset to a category.\
+\
+
+\b \cf2 - (NSImage *)image
+\b0 \cf0 \
+This is the image that will be displayed for the asset. Use what ever size image you want. The view will do the right thing.\
+\
+
+\b \cf2 - (NSString *)label
+\b0 \cf0 \
+This is the short label that will be displayed for the asset. Example: "Pop Up Button"\
+\
+
+\b \cf2 - (NSString *)shortDescription;
+\b0 \cf0 \
+This is the description that will be displayed in the icon view when the library is configured to show icons and short descriptions in the grid view.\
+\
+
+\b \cf2 - (NSAttributedString *)detailedDescription
+\fs26 \cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0\fs24 \cf0 This is the attributed text that will be displayed in the detail view. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSAttributedString *)detailedLabel
+\fs26 \cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0\fs24 \cf0 This is the formatted label that will be centered in the label area of the detail view.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (id)representedObject;
+\fs26 \cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0\fs24 \cf0 Any object you want. Not retained.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 DTAssetCategory
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0 \cf0 This class is a control that partitions your assets within the library. You're expected to add assets to categories, and then add assets to the library.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Asset categories has the following methods
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (id)initWithIdentifier:(NSString *)identifier andDisplayName:(NSString *)displayName;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Initializes a category with an identifier and displayName. The identifier should be stable between launches. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSString *)identifier;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Returns the identifier provided to the initializer.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSString *)displayName;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Returns the display name provided to the initializer.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)addAssetSourceWithIdentifier:(NSString *)assetSourceID andDisplayName:(NSString *)displayName;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Adds an asset source identified by assetSourceID to the category. This will create a group under the "library" group in this category with 'displayName' all assets in a category belong to one 'assetSourceID'.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)removeAssetSourceWithIdentifier:(NSString *)assetSourceID;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Remove the asset source, all of the assets added on behalf of that souce, and all of the sub groups under the 'library' section of the group hierarchy that re owned by 'assetSourceID'\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSArray *)assets;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Returns the list of assets previously added with "addAsset:toAssetSourceWithIdentifier:subpath:".\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)addAsset:(DTAsset *)asset toAssetSourceWithIdentifier:(NSString *)assetSourceID subpath:(NSString *)path;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Adds an asset to the library. The asset will appear under the 'assetSourceID' group under that was previously created with a call to "addAssetSourceWithIdentifier:andDisplayName:"\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)removeAsset:(DTAsset *)asset;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Remove an asset from the library. This will remove it from all groups it is currently in.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 DTAssetLibrary
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0 \cf0 This class is a controller that integrates your categories with the library view. You're expected to add asset categories to it, and then answer a series of delegated callbacks\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 The asset library has the following methods
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 + (id)sharedInstance;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Convenience. Returns a shared instance of the asset library class.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)setDelegate:(id)delegate;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Sets the delegate. The delegate must respond to 
+\b ALL
+\b0  of the delegate selectors.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSWindow *)libraryWindow;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Returns the library window. Useful for ordering it in and out.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSSet *)allowedAssetViewStyles;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Used to control the view styles that are available from the action menu. It should be a set of numbers from the DTAssetViewStyle enumeration.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)setActiveAssetCategory:(DTAssetCategory *)category;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Sets the active category in the library. Changing this will change the content of the group view, asset view, and asset detail view.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSArray *)visibleAssetCategories;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Sets the visibility and order of the categories. Setting it to an array of just one category removes the category swticher control. Setting it to an array that does not include the currently active category, clears the currently active category.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)updateSmartAssetGroupEditorStatus;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 If you previously returned a view through the delegate callback assetLibrary:createViewForSmartRuleViewID: and that view is changing in a way that will alter the smart group rule, you should invoke this method. Currently, the smart groups editors "N Matches" text is updates through this method.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSArray *)assetCategories;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Returns the list of categories previously added with "addCategoryNamed:"\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)addAssetCategory:(DTAssetCategory *)category;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Adds a new category to the library. A category is set of partitioned assets. For example, "Carbon Objects", "Cocoa Objects", "Images" and "Sounds" might be categories in Interface Builder while "Actions" and "Variables" might be categories in Automator. If all of you assets should be visible at once, just use one category.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b\fs36 \cf0 DTAssetLibrary Delegation\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b0\fs24 \cf0 You must implement all of the asset library delegation callbacks.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Asset identification callbacks
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSArray *)assetLibrary:(DTAssetLibrary *)library searchTermsForAsset:(DTAsset *)asset;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Return an array of strings used to filter and search 
+\i asset
+\i0 .\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Pasteboard callbacks
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)assetLibrary:(DTAssetLibrary *)library populatePasteboard:(NSPasteboard *)pboard withAssets:(NSArray *)assets;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Put the objects represented by 
+\i assets
+\i0  onto 
+\i pboard
+\i0 . At this point, the library has already declared a number of types for the pasteboard. You should not invoke declareTypes:owner: on the pasteboard from within this method but instead should invoke addTypes:owner:.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (BOOL)assetLibrary:(DTAssetLibrary *)library canCreateAssetsFromPasteboard:(NSPasteboard *)pasteboard forAssetCategory:(DTAssetCategory *)category;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 If 
+\i pasteboard
+\i0  contains data that can be used to construct assets for category, then you should return YES from this method. This is used when dragging user content back to the library.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (BOOL)assetLibrary:(DTAssetLibrary *)library createAsset:(DTAsset **)asset andImage:(NSImage **)image forAssetSourceWithIdentifier:(NSString **)assetSourceID fromPasteboard:(NSPasteboard *)pboard forInsertingIntoAssetCategory:(DTAssetCategory *)category;
+\b0 \cf0 \
+The delegate will receive this callback if a drag containing objects from the application ended on the library at an acceptable position after a successful call to assetLibrary:pasteboard:containsObjectsThatCanBecomeAssetsForCategoryNamed. In this callback, you should produce a new asset, image, and assetSourceID and return them through the out parameters. The image you return will be presented to the user for cropping and scaling.\
+\
+
+\b \cf2 - (NSArray *)assetLibrary:(DTAssetLibrary *)library pasteboardTypesForAssetCategory:(NSString *)category;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Return the pasteboard types used for content in your application that can be added to the library.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Asset Actions
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (BOOL)assetLibrary:(DTAssetLibrary *)library depositAssets:(NSArray *)assets;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 When the user double clicks or presses enter on an asset, this method will be invoked to that your application can deposit the assets in the main window.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (BOOL)assetLibrary:(DTAssetLibrary *)library shouldRemoveAsset:(DTAsset *)asset;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 This method allows or disallows the user to remove assets from the library.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Appearance callbacks
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi20\ql\qnatural\pardirnatural
+
+\b \cf2 - (BOOL)assetLibrary:(DTAssetLibrary *)library shouldShowGridLinesForAssetViewStyle:(DTAssetViewStyle)style;\
+
+\b0 \cf0 You can control the grid lines of the asset tile view with this method.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\b \cf0 Drag & drop callbacks
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)assetLibrary:(DTAssetLibrary *)library willBeginDraggingAssets:(NSArray *)assets;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 The library has started dragging 
+\i assets
+\i0 .\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (void)assetLibrary:(DTAssetLibrary *)library didFinishDraggingAssets:(NSArray *)assets at:(NSPoint)screenPoint operation:(NSDragOperation)operation;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 The library is finished dragging 
+\i assets
+\i0 . The drag ended at 
+\i screenPoint
+\i0  with 
+\i operation
+\i0  status.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b \cf2 - (NSImage *)assetLibrary:(DTAssetLibrary *)library alternateDragImageForAssets:(NSArray *)assets;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\ql\qnatural\pardirnatural
+
+\b0 \cf0 Use this method to provide an image for animation. Returning nil will cause the library to use the default behavior.\
+\
+}

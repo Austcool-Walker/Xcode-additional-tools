@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Identifying and Solving Performance Issues">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Identifying and Solving Performance Issues</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH40" title="Identifying and Solving Performance Issues" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="../Breakpoints/chapter_3_section_6.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_2.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <a name="//apple_ref/doc/uid/TP40006475-CH40-SW1" title="Identifying and Solving Performance Issues" turn_anchor="no"></a><h1>Identifying and Solving Performance Issues</h1><p>This chapter describes a number of strategies that can help you track down performance issues and understand how OpenGL works with your application. Before you read this chapter, you should already be familiar with how to start and run a profiling session, and how to set breakpoints.</p>
+<!-- This template is being used for both PDF and HTML. -->
+<!-- TopicBook.pm currently relies on the element name bmini_toc. -->
+
+    <h4>Contents:</h4>
+    
+    <p class="blockquote">
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW3" href="chapter_4_section_2.html#//apple_ref/doc/uid/TP40006475-CH40-SW3">Making Sure You Use Functions Correctly</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW4" href="chapter_4_section_3.html#//apple_ref/doc/uid/TP40006475-CH40-SW4">Identifying Problem Areas in Your Application</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_23" href="chapter_4_section_4.html#//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_23">Checking for Optimal Data Types and Formats</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW5" href="chapter_4_section_5.html#//apple_ref/doc/uid/TP40006475-CH40-SW5">Managing Trace Data</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW6" href="chapter_4_section_6.html#//apple_ref/doc/uid/TP40006475-CH40-SW6">Checking for Application Errors, Thread Conflicts, and Software Fallbacks</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_24" href="chapter_4_section_7.html#//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_24">Evaluating The Affect Of The Multithreaded OpenGL Engine</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_25" href="chapter_4_section_8.html#//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_25">Monitoring GPU Use</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_26" href="chapter_4_section_9.html#//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_26">Using Window Resizing to Diagnose Performance</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_27" href="chapter_4_section_10.html#//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_27">Identifying Unmatched Calls</a>
+            
+        <br>
+
+        
+
+    </p><br>
+
+
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="../Breakpoints/chapter_3_section_6.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_2.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

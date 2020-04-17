@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HorizontalOrientation</key>
+	<dict>
+		<key>imageName</key>
+		<string>GroupButtonHorizontal.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>DisabledState</key>
+			<string>{{10, 0}, {5, 5}}</string>
+			<key>InteriorMask</key>
+			<string>{{15, 0}, {5, 5}}</string>
+			<key>OffState</key>
+			<string>{{5, 0}, {5, 5}}</string>
+			<key>OnState</key>
+			<string>{{0, 0}, {5, 5}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>1</integer>
+	</dict>
+	<key>VerticalOrientation</key>
+	<dict>
+		<key>imageName</key>
+		<string>GroupButtonVerticalHiDPI.pdf</string>
+		<key>imageParts</key>
+		<dict>
+			<key>InteriorMask</key>
+			<dict>
+				<key>Bottom</key>
+				<string>{{22, 0}, {10, 6}}</string>
+				<key>Center</key>
+				<string>{{22, 6}, {10, 4}}</string>
+				<key>Top</key>
+				<string>{{22, 10}, {10, 4}}</string>
+			</dict>
+			<key>OffState</key>
+			<dict>
+				<key>Bottom</key>
+				<string>{{0, 0}, {10, 6}}</string>
+				<key>Center</key>
+				<string>{{0, 6}, {10, 4}}</string>
+				<key>Top</key>
+				<string>{{0, 10}, {10, 4}}</string>
+			</dict>
+			<key>OnState</key>
+			<dict>
+				<key>Bottom</key>
+				<string>{{11, 0}, {10, 6}}</string>
+				<key>Center</key>
+				<string>{{11, 6}, {10, 4}}</string>
+				<key>Top</key>
+				<string>{{11, 10}, {10, 4}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>

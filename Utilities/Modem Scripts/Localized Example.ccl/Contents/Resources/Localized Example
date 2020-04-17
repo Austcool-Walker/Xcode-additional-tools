@@ -1,0 +1,15 @@
+! Localized Example
+
+! demonstrate how log messages can be localized
+! see corresponding strings in Resources/<lang>.lproj/Localizable.strings
+
+@ORIGINATE
+Note "Hello" 3
+Note "Log message" 1
+ASK 2 "Is anyone out there?"
+
+exit -6002 "Goodbye"
+
+@HANGUP
+@ANSWER
+exit 0

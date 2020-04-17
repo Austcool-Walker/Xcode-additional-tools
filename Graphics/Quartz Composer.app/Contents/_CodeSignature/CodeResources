@@ -1,0 +1,2776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/ApplePrivateTemplateDescription.css</key>
+		<data>
+		LIVSovmzWMen82MCoM1OGk3qaa0=
+		</data>
+		<key>Resources/Application Icon.icns</key>
+		<data>
+		+m2NMg0kOoRvmd9rjUJQeWm/6ic=
+		</data>
+		<key>Resources/Browser.tiff</key>
+		<data>
+		G0btCenvrH/a301x3m4HtTJgON0=
+		</data>
+		<key>Resources/Compatibility Display.plist</key>
+		<data>
+		gZdG+DXZ1SzHoKBvwX/BBWRoU60=
+		</data>
+		<key>Resources/Compatibility-Changed.pdf</key>
+		<data>
+		Iw3cZ4M/pElfvANJVn9Fi6BQVx4=
+		</data>
+		<key>Resources/Compatibility-ChangedUnsafe.pdf</key>
+		<data>
+		3vayEJyBR3qpXr4Dvg4R/lXTPqA=
+		</data>
+		<key>Resources/Compatibility-Missing.pdf</key>
+		<data>
+		fYN86g6tMewrsflXXZIRtLFpZmw=
+		</data>
+		<key>Resources/Compatibility-MissingUnsafe.pdf</key>
+		<data>
+		6qcUa/6CXEns8wvrBDfSifsT/sY=
+		</data>
+		<key>Resources/Compatibility.plist</key>
+		<data>
+		jzR3FuU0GXbVYgnJkjkaQQEKOks=
+		</data>
+		<key>Resources/Composition Icon.icns</key>
+		<data>
+		d2FDL65U+L3wbYPgV46ZYuxC4k4=
+		</data>
+		<key>Resources/Composition Metadata.plist</key>
+		<data>
+		rjGRTWOOEKd+vddPmncXl4/nrAw=
+		</data>
+		<key>Resources/CreateClip.tiff</key>
+		<data>
+		Bs0pSmuJMPI/VXp7gkxxS5YMLX0=
+		</data>
+		<key>Resources/DefaultTemplateIcon.png</key>
+		<data>
+		1aGzPtxbr3iFHjBYzH32pJrYDW8=
+		</data>
+		<key>Resources/Distance.qtz</key>
+		<data>
+		N9gSv2RR2w+Yuylk5if5/oYje9U=
+		</data>
+		<key>Resources/Editor.tiff</key>
+		<data>
+		1j5RxuQ3Dac5Xdp22AvsCvTgJiE=
+		</data>
+		<key>Resources/English.lproj/Compare.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			om1/A5YbzvJocSwyAzprOtSMa8I=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Editor.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5f89gqauGHvEb5qGYPi2/O6qxKo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Introduction.rtf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xGfXDXELBdapvXCiLzpYxWoJcl0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wSUIQihPo9uoPmdqEpqEE0j21kY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/MainMenu.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Aaq8T+GwAOzvCQzevY7CebSHQ2o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Patcherator.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xEibVqP67AVt1NwCphzrZWigl3c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/TemplateAssistant.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yP6p7+COunSL4uW8IcQmvxvC8Ic=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Viewer.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rHOEC4zvcfrrfUn86df5WvZE6Ak=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Blue.qtz</key>
+		<data>
+		lxJyYrU2keeI51YzoTjuJA+BJBM=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Cells.qtz</key>
+		<data>
+		BL01hKH7F1Ul18Xdhe5SO8lg7xA=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Cube Array.qtz</key>
+		<data>
+		+penY8dWdfX0Y/ZV4+7YZ9L6baY=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Cube Replicator.qtz</key>
+		<data>
+		b3Q6BWDQiQnKKXrnwzqHcI73Pns=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Glow.qtz</key>
+		<data>
+		Ja/4CsPI+HAA+OOxUFnFO1RiuKw=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Introduction.qtz</key>
+		<data>
+		TFblC4uMdQ6G/1H287QfvTgZPAM=
+		</data>
+		<key>Resources/Examples/Graphic Animations/ReadMe.txt</key>
+		<data>
+		lFoC4GSTfE+2FDgtrHkIfJVpuiw=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Rings.qtz</key>
+		<data>
+		ql5adEIohUCRdKF5ntgrPkOsP0k=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Scanner.qtz</key>
+		<data>
+		1KgEZy8+jpO7GBC/9MWAfD3x8vM=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Slide.qtz</key>
+		<data>
+		dcL2uC+Irhm11aeYSE6RmLTD/+w=
+		</data>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Disk.tiff</key>
+		<data>
+		MMIhIGlZpIc2eEQDHhG0GiB5M68=
+		</data>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Hexagon.tiff</key>
+		<data>
+		JkNRTOhsukRp0BdmpkR+XI45ls4=
+		</data>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Oval.tiff</key>
+		<data>
+		cGk/T+Vo55ZJZ+I8K8y4uuj8cj4=
+		</data>
+		<key>Resources/Examples/Graphic Animations/Static.qtz</key>
+		<data>
+		CDeCZDluWVoT8odHOZ41/lyDdlg=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/Color Planes.qtz</key>
+		<data>
+		j1mWeeZx+TtqRpPA7UyhgR6HkpE=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/Cube Dissolve.qtz</key>
+		<data>
+		ZjxxaGV7e7oNQwr+6iee8kTbB8U=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/Doorway.qtz</key>
+		<data>
+		vpqndo+VYu0A6fkoWLnxTGu2NSo=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/ReadMe.txt</key>
+		<data>
+		lNZchCmcy5G+v6i087k17cKAucI=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/Sliver.qtz</key>
+		<data>
+		99ZxtyxXyg3TwqRwhLYdHTMNJVY=
+		</data>
+		<key>Resources/Examples/Graphic Transitions/Star.qtz</key>
+		<data>
+		tcXHNXl0sT6NMMiBKEHwMwnBtsc=
+		</data>
+		<key>Resources/Examples/Image Filters/Black Hole Lines.qtz</key>
+		<data>
+		WiNVjdDseW4V3xbI0FP4pgAdJ0w=
+		</data>
+		<key>Resources/Examples/Image Filters/Black Hole.qtz</key>
+		<data>
+		KZcbuMuAnO3is+zpfttS2BQI7/8=
+		</data>
+		<key>Resources/Examples/Image Filters/Cell Walls.qtz</key>
+		<data>
+		3zWltvbkvp+9tyTXbl46PymS+VA=
+		</data>
+		<key>Resources/Examples/Image Filters/Cutout.qtz</key>
+		<data>
+		W4P2xhQUDI9B+CNrwWgyvBDswvo=
+		</data>
+		<key>Resources/Examples/Image Filters/Detail.qtz</key>
+		<data>
+		uFL2AGXZYKcoC6fbao5M+yFLdxc=
+		</data>
+		<key>Resources/Examples/Image Filters/Edge Overlay.qtz</key>
+		<data>
+		OpObFymSwbA1/TxaFCdKGydUavw=
+		</data>
+		<key>Resources/Examples/Image Filters/Highlight Control.qtz</key>
+		<data>
+		cXe3NQB5nCzYnH1DSDxCdoaezsM=
+		</data>
+		<key>Resources/Examples/Image Filters/Image Repeater.qtz</key>
+		<data>
+		/SbaSzii1G2D52bAuM7riX+6G0k=
+		</data>
+		<key>Resources/Examples/Image Filters/Light Beam Double.qtz</key>
+		<data>
+		PXP1vgmRJTTglLuGCv1s3xPXqTY=
+		</data>
+		<key>Resources/Examples/Image Filters/Line Gloom.qtz</key>
+		<data>
+		X53MZoqV5VjMn9DM0XldaDAG99o=
+		</data>
+		<key>Resources/Examples/Image Filters/Mirror Edge.qtz</key>
+		<data>
+		YfeQ8lTPh44NvgE4D6fRdrcFLI0=
+		</data>
+		<key>Resources/Examples/Image Filters/Mirrored Kaleidoscope.qtz</key>
+		<data>
+		bC7BPTqM1LZFb/KTaaNwN4tOe0o=
+		</data>
+		<key>Resources/Examples/Image Filters/Op Tile.qtz</key>
+		<data>
+		ImZQQcRskQy4eG8YLNvTzIUNPMs=
+		</data>
+		<key>Resources/Examples/Image Filters/Radial Chroma Blur.qtz</key>
+		<data>
+		ktK3ESPJxUkUbMmrpLII5d5VTg4=
+		</data>
+		<key>Resources/Examples/Image Filters/ReadMe.txt</key>
+		<data>
+		ZMV73sj/tUWul2udMUdne1TA5Gk=
+		</data>
+		<key>Resources/Examples/Image Filters/Rectangular Mosaic.qtz</key>
+		<data>
+		2VZhvoUg+vvRZrggAdOPjkkIXJg=
+		</data>
+		<key>Resources/Examples/Image Filters/Rotate Colors.qtz</key>
+		<data>
+		5xOSRKETa2QEviD2qHqZ/PLcebI=
+		</data>
+		<key>Resources/Examples/Image Filters/Shady.qtz</key>
+		<data>
+		NQ1N790RikGdY7kKM3W9LFw/wYA=
+		</data>
+		<key>Resources/Examples/Image Filters/Soft Scaled Pixellate.qtz</key>
+		<data>
+		LVgCVbi0lf1zDZH5li92BK9C+U4=
+		</data>
+		<key>Resources/Examples/Image Filters/Tryptamine.qtz</key>
+		<data>
+		Dw8nfQq3TFWkxRaNXQdOo1Ntbyw=
+		</data>
+		<key>Resources/Examples/Image Filters/Unsharp Mask.qtz</key>
+		<data>
+		m2epmlz2TVdWuzychbeEUrkfc8k=
+		</data>
+		<key>Resources/Examples/Image Filters/Zebra Zoom.qtz</key>
+		<data>
+		ApSHNxX/aLWQ7Cv01lW1kWwVH3M=
+		</data>
+		<key>Resources/Examples/Image Filters/Zebra.qtz</key>
+		<data>
+		Zw9/PDyc1K/izncIBnFdYI40XVM=
+		</data>
+		<key>Resources/Examples/Music Visualizers/Club Lisa.qtz</key>
+		<data>
+		3AHrgW+E7syk7hx8psIBTf8sCj8=
+		</data>
+		<key>Resources/Examples/Patches/Alpha.qtz</key>
+		<data>
+		5fB3bBLHIrxqpWmR5NeE110HdX8=
+		</data>
+		<key>Resources/Examples/Patches/Anchor Point.qtz</key>
+		<data>
+		yKBGYwC3zFF2Y1KYVmx0h+wWR4I=
+		</data>
+		<key>Resources/Examples/Patches/Area Histogram.qtz</key>
+		<data>
+		/rPay32WQK6zHC77lcqTwXAmu4Q=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Bass Drum.wav</key>
+		<data>
+		OPyxJefPrFA5wQ4pST/igcj2pkg=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Crash.wav</key>
+		<data>
+		d4YxAlKWDbnnhXQrftHDSPjghic=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Hi-hat Closed.wav</key>
+		<data>
+		WfCr0fDDrHP7fh8LNfvggLD816o=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Hi-hat Open.wav</key>
+		<data>
+		kjdM+IRgAC+BB7XVU8Ii7cnIcrM=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Snare Drum.wav</key>
+		<data>
+		LjMHOhzl604RIQXUdFA7cYh0ZXw=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Hi.wav</key>
+		<data>
+		okjMM50JJThy6HpTHbPNp81EIuM=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Low.wav</key>
+		<data>
+		F70/qFvzasuNjPNPlqzXoZHqf5o=
+		</data>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Med.wav</key>
+		<data>
+		RylsopFiwtv3NE1x7rKw4CV04vc=
+		</data>
+		<key>Resources/Examples/Patches/Audio Input.qtz</key>
+		<data>
+		sGjnAh2ngrG8emn2MX0OzBmXbKk=
+		</data>
+		<key>Resources/Examples/Patches/Basic XML Loading.qtz</key>
+		<data>
+		Dlk+Ay8HWu4etiqwrR4NhBTu96c=
+		</data>
+		<key>Resources/Examples/Patches/Basic XML Loading.xml</key>
+		<data>
+		7lKD31M7EC3Xsk2M8lbxgvoLakA=
+		</data>
+		<key>Resources/Examples/Patches/Brightness Sort.qtz</key>
+		<data>
+		kCLEY5NkxNtJKLA21aKKlkVAXxA=
+		</data>
+		<key>Resources/Examples/Patches/CPU Meters.qtz</key>
+		<data>
+		Z5pZXZgtiAswTQWvRMSvl4nA/R4=
+		</data>
+		<key>Resources/Examples/Patches/Chart.qtz</key>
+		<data>
+		z2FSr5aiiBRRp/eqa/HR5/RkjD8=
+		</data>
+		<key>Resources/Examples/Patches/Chart.xml</key>
+		<data>
+		Xihrt380AXBRjdTI0IQfljAiRTE=
+		</data>
+		<key>Resources/Examples/Patches/Clock.qtz</key>
+		<data>
+		sAgtC0W2zZNy+abixFv/pXnUwNQ=
+		</data>
+		<key>Resources/Examples/Patches/Color Matrix.qtz</key>
+		<data>
+		mP9E6+2MFo8W121lXUuCaKFexXo=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-HSL Kernel.qtz</key>
+		<data>
+		5MJhdrgFvqvx1d0RHs2sxl/fkUA=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-Halftone Teapot.qtz</key>
+		<data>
+		8UKsM9EEKoXoQ1CmYZf9V0PZKCg=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-Line.qtz</key>
+		<data>
+		fuHb0WJ+H59mC3c8Alvh6qJnNDg=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-Nearest Neighbor Sampling.qtz</key>
+		<data>
+		r5tVB/m0q0lN61FOQCVjVh2m3u0=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-Star Shine.qtz</key>
+		<data>
+		i8MoOsz/8cndojEe5bG1uo5Vr4Q=
+		</data>
+		<key>Resources/Examples/Patches/CoreImage-Wavelet Transform.qtz</key>
+		<data>
+		YTsNhtcP8tdr8QhnlQfmLM3X6Zs=
+		</data>
+		<key>Resources/Examples/Patches/Drum Kit.qtz</key>
+		<data>
+		d/dgeW38vE09n/uDge+f1ics5BE=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-3Dlabs-license.txt</key>
+		<data>
+		I43TA9jyu1iSG9BIwfyjMY10RHQ=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-ATI-License.txt</key>
+		<data>
+		zIBQ2DKskVUEGBXzxKxHuyv/NF4=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Brick Shader.qtz</key>
+		<data>
+		aIbPxfr87ziy56gbtTKmuxLtyMI=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Dimple.qtz</key>
+		<data>
+		C+M7yP3OoYWuBRnrjRVSWGUyHgI=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Earth.qtz</key>
+		<data>
+		JRpluAdgHb3BK7yG3yjEcAFC6ik=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Environment Map.qtz</key>
+		<data>
+		X9OtED1h8n47IrbDwxhcUHPgyTs=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Gooch.qtz</key>
+		<data>
+		JtfDSbj0HVfgKlaOQVRaaFlX0IA=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Julia.qtz</key>
+		<data>
+		GWyEC1UeHOgoO5LT1HhKydCqmxE=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Lattice.qtz</key>
+		<data>
+		UxFvU9paoQFxmkt+dSyvxj//N4s=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-LightworkDesign-license.txt</key>
+		<data>
+		6xc1PPAkuKf7cw+FjccR+9qnLQE=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Mandelbrot.qtz</key>
+		<data>
+		Guogod/9I9hvL46GL3h8Fdvunnc=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Polkadot3D.qtz</key>
+		<data>
+		dBDI9rsHASQgQxTczBIj0emktBo=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-SphereMorph.qtz</key>
+		<data>
+		NQFUO/xAUX0R5zVgLtKy+1FE2Oc=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Toon.qtz</key>
+		<data>
+		5enWez7th/q+4MRXCk3ygjdPGk4=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-TorusMorph.qtz</key>
+		<data>
+		h5fSNHJLl8qe4n4SbzBsJOh1Gd8=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Toyball.qtz</key>
+		<data>
+		raraUab0VAWq0CL4JLK7kjSTnPI=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-VertexNoise.qtz</key>
+		<data>
+		1/EHB91OrKZLRWiBhyY9riD3VyY=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Wobble.qtz</key>
+		<data>
+		yxLn8tjgwF1227GqJpucOw/g5Fk=
+		</data>
+		<key>Resources/Examples/Patches/GLSL-Wood1.qtz</key>
+		<data>
+		owI7rcrnAtG16dmFXeMPsjMdIok=
+		</data>
+		<key>Resources/Examples/Patches/Grid.qtz</key>
+		<data>
+		NQ5QFCqwnDzFv0N7m5QpV/XJCAU=
+		</data>
+		<key>Resources/Examples/Patches/Image Histogram.qtz</key>
+		<data>
+		pA6XsAnK6V8O2wVdX+6VvepLP6U=
+		</data>
+		<key>Resources/Examples/Patches/Image Pixel.qtz</key>
+		<data>
+		KkKHq5O8OGhuzWmpOVSZfG2fieY=
+		</data>
+		<key>Resources/Examples/Patches/Image Read.qtz</key>
+		<data>
+		oX/ANgwcC4xXTZ2/y76yQrur6T8=
+		</data>
+		<key>Resources/Examples/Patches/Image Resize.qtz</key>
+		<data>
+		3Jpg8KDF7x6bwcD9rdsBV5/o4Ls=
+		</data>
+		<key>Resources/Examples/Patches/Image Stack.qtz</key>
+		<data>
+		IvAYQZW7BblY7ckamSde0FKmCzM=
+		</data>
+		<key>Resources/Examples/Patches/Image Texturing Properties Grid.qtz</key>
+		<data>
+		pm1U59hFkdXjDeHO/Lzvi/vvDFE=
+		</data>
+		<key>Resources/Examples/Patches/Image Texturing Properties Reflection.qtz</key>
+		<data>
+		ca5yK/L73+q9yolaChVFhv4pI9w=
+		</data>
+		<key>Resources/Examples/Patches/Image Texturing Properties Texture Tiling.qtz</key>
+		<data>
+		1IjTqoMXRXTpezWnGpdjWsThlQI=
+		</data>
+		<key>Resources/Examples/Patches/Inertia with Bouncy Limits.qtz</key>
+		<data>
+		eB6KPFSXUlXi1BP2EsQ/CYebPOI=
+		</data>
+		<key>Resources/Examples/Patches/Inertia with Limits.qtz</key>
+		<data>
+		cGe2BJodykNtmvUdFV8zt5Xjq4g=
+		</data>
+		<key>Resources/Examples/Patches/Inertia.qtz</key>
+		<data>
+		yS6RwhrG5Y3ECGLeXgAt7vLawWk=
+		</data>
+		<key>Resources/Examples/Patches/Integrated Position.qtz</key>
+		<data>
+		WqcQef0VranAq7wguaqofT3jZc4=
+		</data>
+		<key>Resources/Examples/Patches/Integrated Speed.qtz</key>
+		<data>
+		nzR0JEAQp/zvqzw5nu2ou2M725Y=
+		</data>
+		<key>Resources/Examples/Patches/Interaction.qtz</key>
+		<data>
+		7bcRfuzvglzdiIa5/nXHrgEgAec=
+		</data>
+		<key>Resources/Examples/Patches/Interpolation.qtz</key>
+		<data>
+		U0PuM8PmGs5Zu4vnrFL5+71L+cA=
+		</data>
+		<key>Resources/Examples/Patches/Iterator Back to Front.qtz</key>
+		<data>
+		fkk2I9cZThfI3uOgTQQM6QADuVc=
+		</data>
+		<key>Resources/Examples/Patches/Iterator Counter.qtz</key>
+		<data>
+		v/jxYOzQMRFMMjraxbqLw1HCts0=
+		</data>
+		<key>Resources/Examples/Patches/Iterator Selection List.qtz</key>
+		<data>
+		j3oKM6wC4CYMaI1wHrfNjvlCWyg=
+		</data>
+		<key>Resources/Examples/Patches/Mouse Ribbon.qtz</key>
+		<data>
+		PlrpqCuSx/Ld7kL/jz5wwwKMNC0=
+		</data>
+		<key>Resources/Examples/Patches/Mouse Scroll Reset.qtz</key>
+		<data>
+		jp69rt7ewFj1n4TQ8Kj8vI6O8uU=
+		</data>
+		<key>Resources/Examples/Patches/Mouse Trails.qtz</key>
+		<data>
+		GLZnnLH8hRPg2l1WGtrlxyB44Dg=
+		</data>
+		<key>Resources/Examples/Patches/N-Body.qtz</key>
+		<data>
+		QNd9xZDAomSPoYH9K/qL0QyYWzg=
+		</data>
+		<key>Resources/Examples/Patches/Network Broadcaster.qtz</key>
+		<data>
+		HhJRY7TZLol8fENqT4Gap6FyMvE=
+		</data>
+		<key>Resources/Examples/Patches/Network Receiver.qtz</key>
+		<data>
+		3UF9h152moQZcPGZ9ioxRLx7y8g=
+		</data>
+		<key>Resources/Examples/Patches/Noise 3D.qtz</key>
+		<data>
+		XjKEWlSLOjwalXUXR2V5n+AuYok=
+		</data>
+		<key>Resources/Examples/Patches/OSC Receiver.qtz</key>
+		<data>
+		8YbcZw6J3AjrCNBDYZrM+LNzjUc=
+		</data>
+		<key>Resources/Examples/Patches/OSC Sender.qtz</key>
+		<data>
+		uGN1QCGDHPsBYr4PdJNu+4xrCsk=
+		</data>
+		<key>Resources/Examples/Patches/Paint.qtz</key>
+		<data>
+		yu7d7+g/0GPYYe7EpAGC4uABgSk=
+		</data>
+		<key>Resources/Examples/Patches/Particle Blob.qtz</key>
+		<data>
+		ZrIKdGyuSNeWrScT3T+RcLD1QOY=
+		</data>
+		<key>Resources/Examples/Patches/Particle Explosion.qtz</key>
+		<data>
+		gpSiAC/s6faHm6+NmwwDDtNnm5w=
+		</data>
+		<key>Resources/Examples/Patches/Particle System.qtz</key>
+		<data>
+		7XVBRnjHLY0lDBuS5eXhwgZEnWY=
+		</data>
+		<key>Resources/Examples/Patches/Pool/Data/Boat.jpg</key>
+		<data>
+		6qpbgRIvZi+Okap8whkGxrs8nRI=
+		</data>
+		<key>Resources/Examples/Patches/Pool/Data/OrangePool.dae</key>
+		<data>
+		qeXjCHCO9NQ+7gyIkbYJ7U1uas4=
+		</data>
+		<key>Resources/Examples/Patches/Pool/Data/RacingYacht.dae</key>
+		<data>
+		cVtzzb47Sr3upQCyGUQYZefwqD0=
+		</data>
+		<key>Resources/Examples/Patches/Pool/Data/Sails.jpg</key>
+		<data>
+		oG+vAXaB4js+wiyxEcPw5CkWz7M=
+		</data>
+		<key>Resources/Examples/Patches/Pool/Water Surface.qtz</key>
+		<data>
+		8zgrarRMIyN6uuazTxdTUUsv/MA=
+		</data>
+		<key>Resources/Examples/Patches/Pulse.qtz</key>
+		<data>
+		ihOpFh6yuLksVJ+x7dzdeKOHWRM=
+		</data>
+		<key>Resources/Examples/Patches/Quad.qtz</key>
+		<data>
+		rKbeMxuXIry2HlQ3DCmc+U02KVw=
+		</data>
+		<key>Resources/Examples/Patches/Random Nested Iterator.qtz</key>
+		<data>
+		Pa5spgAVLMwaaoJmcBqlhEyg8r8=
+		</data>
+		<key>Resources/Examples/Patches/Random.qtz</key>
+		<data>
+		6TvqMAkqq2HC5XZmx+y9HK68gis=
+		</data>
+		<key>Resources/Examples/Patches/Render In Image.qtz</key>
+		<data>
+		1+QKjP8l/svYd/m0jaEgv5GWJqg=
+		</data>
+		<key>Resources/Examples/Patches/Rendering Destination Dimensions.qtz</key>
+		<data>
+		VNe00m7pBva4jLMWJtch6RmZAIU=
+		</data>
+		<key>Resources/Examples/Patches/Shaded Material.qtz</key>
+		<data>
+		HNC0hyvBvmndy2oQFC855zOjnq8=
+		</data>
+		<key>Resources/Examples/Patches/Smoke Dancers/Data/Dancer.mov</key>
+		<data>
+		RNjnvpKU2/N5A9ipYu4IMC6eqgg=
+		</data>
+		<key>Resources/Examples/Patches/Smoke Dancers/Video Smoke.qtz</key>
+		<data>
+		CVsaRAmMQ9xErE+sd7xWHTWsClA=
+		</data>
+		<key>Resources/Examples/Patches/Smooth Continuous Position.qtz</key>
+		<data>
+		22DaH7HtQvD1gz97qhO1AgKClA4=
+		</data>
+		<key>Resources/Examples/Patches/Stop Watch.qtz</key>
+		<data>
+		pLHnRFTjLp8b2a1TDX/Dzv8CIF4=
+		</data>
+		<key>Resources/Examples/Patches/Tablet Trail.qtz</key>
+		<data>
+		CjQV1AafK5asrT/ebFW8SNiq6L4=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_00.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_01.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_02.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_03.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_04.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_05.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_06.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_07.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_08.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_09.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_10.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_11.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_12.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_13.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_14.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_15.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_16.png</key>
+		<data>
+		dNu0fIknenLqjss3fzWTNygYWBY=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/The Twitterverse.qtz</key>
+		<data>
+		vmXZ7lBjcaRIuendv48JWP1A57o=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/friends.xml</key>
+		<data>
+		teeXyq8vmRYFqnJQC9/azWl6oqE=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/friends_timeline.xml</key>
+		<data>
+		HqZ2k6KyXWedlzjejthOitNYPow=
+		</data>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/user_timeline.xml</key>
+		<data>
+		RLGC+NHQdiOwpkryCEm1pd/N3uE=
+		</data>
+		<key>Resources/Examples/Patches/Timeline.qtz</key>
+		<data>
+		rl2jKtwkpqyA5K1tXSTibW56Sn0=
+		</data>
+		<key>Resources/Examples/Patches/Trackball.qtz</key>
+		<data>
+		yfl3bT/VqyKewxZw/9j0XyeZIVk=
+		</data>
+		<key>Resources/Examples/Patches/Video Feedback.qtz</key>
+		<data>
+		IeIjkLm765I6q/cTIdgCe0YAWEs=
+		</data>
+		<key>Resources/Examples/RSS Visualizers/Photocast Slideshow.qtz</key>
+		<data>
+		eQL7tn3CeO4Bya5ESuD2BX+iMeA=
+		</data>
+		<key>Resources/Examples/RSS Visualizers/ReadMe.txt</key>
+		<data>
+		Ae4QW7RXnxZ7SXivQAqrdVvXFRo=
+		</data>
+		<key>Resources/Examples/Screen Savers/Lorem Ipsum.qtz</key>
+		<data>
+		LQJ/D6RKIdq1lVPG/pydJQBDlag=
+		</data>
+		<key>Resources/Examples/Screen Savers/ReadMe.txt</key>
+		<data>
+		LyUqrWEn6riCLXIFepppEFZ+3uY=
+		</data>
+		<key>Resources/Examples/Screen Savers/Retro.qtz</key>
+		<data>
+		SGmGx0xwtOVzstUYSu2poHpv75k=
+		</data>
+		<key>Resources/Examples/Screen Savers/Security.qtz</key>
+		<data>
+		4vCzO3hjwmnnxgXEVSrISwPnsNs=
+		</data>
+		<key>Resources/GFGraphPathGradient.tiff</key>
+		<data>
+		vlzskJ8+dWDUc7Jfjyf7DkOP7Eo=
+		</data>
+		<key>Resources/HorizontalWipe.qtz</key>
+		<data>
+		4L+unha2zITlBoLvn0I5JLT+7QA=
+		</data>
+		<key>Resources/Information.tiff</key>
+		<data>
+		zP4iKuiLq5NNbl5DbIqYadRH9+s=
+		</data>
+		<key>Resources/Inspector.tiff</key>
+		<data>
+		DHOZedsABiceRPMEsXGTCflLpDU=
+		</data>
+		<key>Resources/Macro.tiff</key>
+		<data>
+		lHsn2RInM+7Wu6GwIz9alKZL4zs=
+		</data>
+		<key>Resources/Mode Debug.tiff</key>
+		<data>
+		WEkldfo514JSkxPTkVGNK99MwlU=
+		</data>
+		<key>Resources/Mode Edit.tiff</key>
+		<data>
+		PkOAhPWNTEatKtoP9vrwQij32Ds=
+		</data>
+		<key>Resources/Mode Performance.tiff</key>
+		<data>
+		rbj0CwwJ2DS79+CkIgSorK8OJis=
+		</data>
+		<key>Resources/Mode Profile.tiff</key>
+		<data>
+		gPFZJ3F0d0f9dmDotGkidYbC8o0=
+		</data>
+		<key>Resources/Opacity.qtz</key>
+		<data>
+		AMLBmKBrYxNxviAwJQHK+n66k/c=
+		</data>
+		<key>Resources/Parameters.icns</key>
+		<data>
+		kMrcQIKC7kTYVLzCMSgtqhR/e3Q=
+		</data>
+		<key>Resources/Preferences.nib</key>
+		<data>
+		BgW0JgeYyVjJDOObtPrizgqGFrE=
+		</data>
+		<key>Resources/Present.tiff</key>
+		<data>
+		/k7LhSlbfLRBebYk+TWOY26jqRw=
+		</data>
+		<key>Resources/Private Defaults.plist</key>
+		<data>
+		qlMtzg2WovZODOSetmqMaHKL+P0=
+		</data>
+		<key>Resources/ReleaseNotes.pdf</key>
+		<data>
+		GhRIz+QGY/3V67Nl8aR/0bK8JM4=
+		</data>
+		<key>Resources/Run.tiff</key>
+		<data>
+		B/2w/Miuaovo9vTii1qiRs+Cvzg=
+		</data>
+		<key>Resources/SaveImage.tiff</key>
+		<data>
+		2SEJvGYbKFHtNHCm30HdC2X13zw=
+		</data>
+		<key>Resources/SettingsInspector.tiff</key>
+		<data>
+		yFnRZZsyR8NqprGPiULRtjYSr0M=
+		</data>
+		<key>Resources/SourceCode.tiff</key>
+		<data>
+		LUT9TGVWb5S/1uXVDqgYY4ayTtc=
+		</data>
+		<key>Resources/Stop.tiff</key>
+		<data>
+		OSDFpbpmven1vQoUYKrW2YsN3hg=
+		</data>
+		<key>Resources/Templates/Blank Composition.qtz</key>
+		<data>
+		B2VJwWkLIMS1aP8rBJ4par51RSU=
+		</data>
+		<key>Resources/Templates/Graphic Animation.qtz</key>
+		<data>
+		vsnich6tKIf3nGoqX2IdUXoE9jQ=
+		</data>
+		<key>Resources/Templates/Graphic Transition.qtz</key>
+		<data>
+		gYQtqKAGnNDXfKeeYvDMonSwKwI=
+		</data>
+		<key>Resources/Templates/Image Filter.qtz</key>
+		<data>
+		xZRgUkFlDE0+oCmVG7condGqCOU=
+		</data>
+		<key>Resources/Templates/Mesh Filter.qtz</key>
+		<data>
+		VyhColvPyy56hB8pBIycMDnBcr0=
+		</data>
+		<key>Resources/Templates/Music Visualizer.qtz</key>
+		<data>
+		X2/JYxr5w9/tjewE7Mm9mIqlgeM=
+		</data>
+		<key>Resources/Templates/RSS Visualizer.qtz</key>
+		<data>
+		FCI4AiTiCEJuxD3vfRsjq4c21DU=
+		</data>
+		<key>Resources/Templates/Screen Saver.qtz</key>
+		<data>
+		84CeDq/CimPuHLotxXiM0Ulf9p8=
+		</data>
+		<key>Resources/Unsafe.pdf</key>
+		<data>
+		H9a/JD2b+h38OpLCufNs/ptUKkI=
+		</data>
+		<key>Resources/Up.tiff</key>
+		<data>
+		/VlWkRhDl3AaR34pJdOWZff40MA=
+		</data>
+		<key>Resources/VerticalWipe.qtz</key>
+		<data>
+		jFAH48tKGRVnDEarZ94s2ggEkFs=
+		</data>
+		<key>Resources/Viewer.tiff</key>
+		<data>
+		3Xnx8dY+iwZwiWDNlwJdKABFil4=
+		</data>
+		<key>Resources/Welcome.qtz</key>
+		<data>
+		yFrAbTLu1lhgZTBLjkPNX+vA+jA=
+		</data>
+		<key>Resources/Welcome.xml</key>
+		<data>
+		PpfysNELSRB2wyIhMKagWzE+A7s=
+		</data>
+		<key>Resources/ZoomIn.tiff</key>
+		<data>
+		z4TC69pmy4wTZ8ieAGFFdvDiX+0=
+		</data>
+		<key>Resources/ZoomOut.tiff</key>
+		<data>
+		9W1yWs10kMiVhAgyLBI7XkZs3a4=
+		</data>
+		<key>Resources/ZoomToDefault.tiff</key>
+		<data>
+		F2suuV4qn+lvK8aEbSbSkGQEVq8=
+		</data>
+		<key>Resources/ZoomToFit.tiff</key>
+		<data>
+		WG2zwA790sodK9o4mfSlnThBq3I=
+		</data>
+		<key>Resources/background_line.png</key>
+		<data>
+		MmoFGb4R17Un/CrMLCDLuRsGAwI=
+		</data>
+		<key>version.plist</key>
+		<data>
+		zqPAgC9GqSVkRxGPQ56EX5Yamks=
+		</data>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>Frameworks/DevToolsKit.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			owPF5NC2+lRRfTEVzJi7gY/j/zI=
+			</data>
+			<key>requirement</key>
+			<string>identifier "com.apple.DevToolsKit" and anchor apple</string>
+		</dict>
+		<key>Resources/ApplePrivateTemplateDescription.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1mgyJ1XGaP8KwSMkdFYGjKE9EJX8zL2RDy7/wzgbqfs=
+			</data>
+		</dict>
+		<key>Resources/Application Icon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yCjQql5oZwu1MFubHg3UeoiEEycrmeZGe7orNQnMKHk=
+			</data>
+		</dict>
+		<key>Resources/Browser.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cocpb21K7egMLMBplwMw6CSPyuztrMTgt6gGjLmAZkw=
+			</data>
+		</dict>
+		<key>Resources/Compatibility Display.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OE/rh8gf1ZrLtQCJFKL0MEY8c8E92F/bCEmHlPO21/Y=
+			</data>
+		</dict>
+		<key>Resources/Compatibility-Changed.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sxnKwGDcxEKVQDjVi25OI9Zex364qAQE2AJLAEGumyI=
+			</data>
+		</dict>
+		<key>Resources/Compatibility-ChangedUnsafe.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g7HMTJ4GuDYJDCfcQ1JFWTQK7OjC4kcDZ9v3yTKFl8Q=
+			</data>
+		</dict>
+		<key>Resources/Compatibility-Missing.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZQP9MEueZJXIqUFYT0CFdcllEh+Z4phyBg15FkU7KKo=
+			</data>
+		</dict>
+		<key>Resources/Compatibility-MissingUnsafe.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/Bg962sb7liMEMdCh37uXrNpIlAaXljVfqrZjP6aX4s=
+			</data>
+		</dict>
+		<key>Resources/Compatibility.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0qHMIGFlHHUqCfKGCcLBiC7SCIzmjF/fvi3dSL/YYqU=
+			</data>
+		</dict>
+		<key>Resources/Composition Icon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nIE9LXAujZ33eFMcLVxiMiCg3XOqk5YqQXHic6Ezwo0=
+			</data>
+		</dict>
+		<key>Resources/Composition Metadata.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rsJbEpgsODu6V1rspEWd38hJjR/g1lIeGQKv1CxPf0U=
+			</data>
+		</dict>
+		<key>Resources/CreateClip.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R/z8u5XCyYdWQkrcKVPro1m2qq+GXbe6OshYQ4jy9tE=
+			</data>
+		</dict>
+		<key>Resources/DefaultTemplateIcon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ObwkswrP0NePri+rhmatD/TQQ/kTw74AbXLkExauxV4=
+			</data>
+		</dict>
+		<key>Resources/Distance.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2zGPdjqAsvcVNK+EzO+fnCANAMziTuIy1RYE+Ntkuow=
+			</data>
+		</dict>
+		<key>Resources/Editor.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2/iclXNKtc1Im52IoRpaaHYiuj9qQFH4P3BbqzpSn+M=
+			</data>
+		</dict>
+		<key>Resources/English.lproj/Compare.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ax1bF9E/2w+ClJ9Gt6Sy0nTYTEHSjqVCZHw7eDqX8+w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Editor.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7wU8V3iPHJoBQezlpmtGBP3KsSSKOmlbTN2Hy1MRIlQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Introduction.rtf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7XPEnuy1taIHDjqoP9gMuvt83zdIKlWceiTeF58xeE4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X4fDippJajLiYwNv240eQ+als91n7AkytSEeuHZeSK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/MainMenu.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UQM/5ni7svUFFJtjM1ZYYK/Btx1+3X5AHAcTZTtF31M=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Patcherator.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ECNlG6bT69nwoTzmJbSE9s84uJD2p4uKJAnbTmDVtDg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/TemplateAssistant.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iWeJ8/behi7gihfVtEh0FOuBh68mfgXKbxJFZiOMzSc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/English.lproj/Viewer.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ed5Aj9hSfMvNLMIdPbVNx9+3Dz2gZiafxCHNHvw+6rM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Blue.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X4wy9ro68Dl5OMHJCGid89nDj+FzeMRoMTHNNBlu+0I=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Cells.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u7ttw/0QBJXoHCBlyOspN/h4wzP+nVzIXPPvNqWp1bY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Cube Array.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			11Yxgv9gk3bMV0Pn3ySCV62pt+2F/58O/aa2kJ5LccQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Cube Replicator.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bNKG+qE/AjPDTsNqFhdjYbRQn0xAZNvnmGIiEt9U2mY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Glow.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OjQsVMkyH6q1mUSDz2OMqDJsF7J/7K4HZGsZOqxrKpY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Introduction.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Fv7X8Tlz9s53FieOZC8V5sUSTRzXakXMbgVmGt+gwEc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/ReadMe.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6d8cVgm4kDvCeUFl0jKbgOIpFTi/7zkB0za0R6DL6vA=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Rings.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			US+DgZPOxGyc5iOKEbDeAUzffDiG3DD09/+xdHYlnrA=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Scanner.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gstbZ3xji9QWMOouEQ4CHXiBNBYGmF+eteWterFwSPc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Slide.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fuAt84kczSJQi+DqOirs3DksYpyCHckeUn+lo98SZiE=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Disk.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y9KuJQzy5nGPOXSruoeIWWb7EtuK9tVVm3WziYsUjxY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Hexagon.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7L0boSUH36PpGK3rK+3ubg7DbT0SPkqpuDQBeIGymXc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/SlideImages/Oval.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QqL+aOVZhXh2is52T9CHDSFF+xLnEqBLgI7uLJp/sa8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Animations/Static.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1uiSwaXqzXQDLeUjvXV2ktUdDtwzZ2g4/fmkPs2sRPE=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/Color Planes.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/WQEbqe3+sIr7yWYbRTUptUDumF0i6bYWMKc/Ncx50E=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/Cube Dissolve.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1gksRp1AxLaZcZQn2s2EYR7xd6tvATS07Tqic1p3Lxw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/Doorway.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0a2p5F+exaQpu4TCuhG2/nuRU0cC8g5HwtdN7w8jVw4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/ReadMe.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PxjO7aU6n2stG4pR1bMTzW8DHMkuYbvTkIELhRTUaF4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/Sliver.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kQYP9m4HNP+EHfLXIoTXvdGtAydXZM/bEUOucRrYHBQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Graphic Transitions/Star.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/7XT7w3fboEj1wMtZfqn6Qq38Tz/xsice7/Ndjc4Qy0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Black Hole Lines.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0MEdsnN6zbko5jusgPT9gTShrMSPkcRRbR3v7axQMLM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Black Hole.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Fxm+mgjkXr9fmrJHF7/i+WrqgPOQgIDY7PpShBpyd0M=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Cell Walls.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mzudi+BpyIto6/VyEhjqSKT6z2WEMaa5TT02qnZZUEg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Cutout.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FGOnp3fAzT2oPxO/gTG5uQIhIdw7bl8XGQXdipRtV5k=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Detail.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hR81TbG75u+otxHT7QbXxo/hBXs4H1hgkH/ZGKVCu+8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Edge Overlay.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zkgGHM+6F0DlXwTaeAbjHOXX3qJSMuh4XygLha7wnbY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Highlight Control.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7J0JwiPWn+LzkDqaP26yFYSJG/jyUuxtO0L8iDqmUJE=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Image Repeater.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b/fyTzJL0WubTIaCS3UmQSburOAwifbMs6VCSxTNEHk=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Light Beam Double.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KWm0agm5CxCkTznoWm2TZnPTm7Z169cuIrcr8DfonkY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Line Gloom.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			prm3Bw2S3TslwF2mPfPGRfVKJ+j3d2vmLRrRmsPLlug=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Mirror Edge.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n6w33IB8+PJHeMPmgLx0zAckCtL55LhhSjJ1lNM1+tc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Mirrored Kaleidoscope.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LtYYG0v0y/dY4ziZUibr6w8ClI4jKLSa1vnIOzKWjxo=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Op Tile.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/+mu76HCdo8r1L0XS4hcirj4+bVBRpUratFN7lUo0ss=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Radial Chroma Blur.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y5V60FD+Opsf2w2pgk5SbV+aZhC+Ua9NCOpqGINSodM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/ReadMe.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tPB5sQBSrvdZv/iG976UdHCc073b29dpQVm/STH8hcs=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Rectangular Mosaic.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wTH010Xzg8FZ+DVVmAWeU8oCknNc8AMReFzGiClVu8I=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Rotate Colors.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+36t0QKdFynj8yXjLCy84vhg+SKATHMfYAF/HpQ2wdM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Shady.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bh/0kTlTy4RmNf/YFi14NjxbvlVAQdP7fgzQMqIrluc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Soft Scaled Pixellate.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Kf2awqR2ikZ2mxjxlP1VTS4geaDaC2fQeMj8ItnaGo=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Tryptamine.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X0Zj/ZZQYsBgjze1fqyzDAW3tr0EqjqHTJHhtcF34BM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Unsharp Mask.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QdgYUDOxi87pdUIr5a+AhwtqsxL0B1gjMqAt8HXz7yU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Zebra Zoom.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k5kdGsorC7jtAPohHDm3iPVSTOvXJ50fhHT5ew7w1O4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Image Filters/Zebra.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cW36GEBs7ShsHtUhqdpnaF2Tzep5PoHZ1j9QOD65fGU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Music Visualizers/Club Lisa.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f8qSllgx8OcsmtRgn8R5zMT1BpWBqV7c+xl+LtGdkUY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Alpha.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dNzMe9zuuUf82MuyxBcjJX3Xa7oH9uaID4JYCniVB2w=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Anchor Point.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ho+BSiEeAhdW2ij6hX28oq5PuM+KmcRxSwZVfF/1lE8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Area Histogram.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fyGmr5ZIzaaWUlMdMw6AZyo33BBWJXGKJsL5AgFPdY8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Bass Drum.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N0ouoAKUJrGj+WaSxVqnvIu1ayxOYUw2sj01KbLyNSg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Crash.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jYR4J4/SOaHzEXl0sXy048t/fiE86Of7WqKAdYj40cw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Hi-hat Closed.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PZSjNvXc7yeAaKrjz/e64ISPr5LVvqSAlV7Xnd0Thv8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Hi-hat Open.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vofvwqx1nuMvyh4oTqkfJuB9vR0kbN0BlF8M0h4aVJY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Snare Drum.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hQgxFrUZCloJNYXSn1/2F6KXdsF0NL1YsjqnWs4f5Co=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Hi.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hD5LUpe/5QPf9qIV+mjWN85juGCX4hcOr+pKdKAKdcQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Low.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jo3GQhCfhBy809Icd5jU2FIJbfHRo6JIVHZl80neml8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Assets/Drum Kit/Tom Med.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bzUqS76WuQNRMyUNUYXFPAG0JPg6fkZR69TFOY4Nopw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Audio Input.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JjfTXIaxLeuLw3qX2af+mK8PQ+ch4JFmIjuCWV4QqpQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Basic XML Loading.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DAwAzXQ+pzmGViEe0bRh4114HdfhB9DlTYHVcT5wZTU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Basic XML Loading.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ODnE/g+OzOynFI3Ek435aksvLSkRDon9/q3Z+KEI7Ao=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Brightness Sort.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VrOrby7SGQN4Pbef3AzyJeJQLfi03SpiKQ+lr+JZCaM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CPU Meters.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DzEjc1BSAryeIGXXIlToSDXywwxl7Egdf4uPbObHNrI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Chart.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Whh1eROTgWBoBiHi3uuxIbfOQa6dNsSghd+PRVf3s1U=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Chart.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LHisXmyIrDMvxdGFOa0/HX/i8fwL7mKg/T0LeMo3YVg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Clock.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nm/5EecAS8p+mkpw4ZnSHNSXj8wlED+o0JfZpRsvCyQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Color Matrix.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			twC35CFFCXX0wrKwWwfL6J0cA4ElD9RbrQva/1i7xs8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-HSL Kernel.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YLGEC5zTLeUJJ+PWDe+6m0Pj+Ds5T6iLHrcmIwHLBvI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-Halftone Teapot.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hQlaHROY8XjOtMvzNMBrThopHHBTnn60Qt5QvoWW11w=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-Line.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LuF9mgdN+bqSHXmQYjU68EagGFek41qNVeeN5oiNRpg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-Nearest Neighbor Sampling.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ej3c54/dw8UOcbuF1ZpW57oK3Hi1FezXqRg14/2BOo0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-Star Shine.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KMXRUJrimhcfYo22wNZiI+EARvQ3DEEFP0PgfPcn57s=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/CoreImage-Wavelet Transform.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tT02IUu/DLHKM+CqHLihJrR/z/rqbxE+b0DFYT8Ra5g=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Drum Kit.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EE7w0oVJ9PsasZT7WA2TOg9BSgVfA8T/07hDz/eozQw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-3Dlabs-license.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			chwQQdVboTlIEKUoI1Z5WTAJnKIoxBgzS6fD+CjUPL0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-ATI-License.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W0PbyJVHGJOStpXMGnmoO5Xh3CTZ5hih+uDidhdE/Ko=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Brick Shader.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e8t79dBE2tEHZm0bv1/NnaaVuzi73TJxK6904xeOnnw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Dimple.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RwKRVi1I4nvUVR4CP4b4/0zD1aAfK5sz7Xt1/jd6dF8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Earth.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t7oDVX9hdk0ely5pP+7gVYQBFIPSUMXpDwI99t1WiFM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Environment Map.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l88ZUOv6WOyUiLr4hBHjHKWMU6QGbJw2KnVj+WluVRY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Gooch.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N4f/dMEV0yXvt1g40cpWw3X20aXzGY/5twKwiQBWD7I=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Julia.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			duNUsnyW0WtfHqQkDWNoIArEnfM1cTAoflT2pZOhD1s=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Lattice.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rTbTy3gpN4qhaLbeqdom69YZpskoI0hwbuuXYm4rDGM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-LightworkDesign-license.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xkC6XXgxQz5P+QxonEksFzid0xlHxhwvo+QN7ZxiYII=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Mandelbrot.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6KWrvQtXZ097umy6tB0xLlEu5LptFFwEqTVU3r5P/MY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Polkadot3D.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Hji6B2p1ao78uvd7B+xncy2IP+ycx9eRt4z5rO8V6g=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-SphereMorph.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zDQs66trgrbBD1uOWKfvkl0cYou0a8anMdi/51pU5rQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Toon.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A6TciBR3H96I3AXI06DOUW2yNLeD7ys+ePQZRIyE9XE=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-TorusMorph.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wc50vyqVa6lbYjwrT0bmn1nlnFXjKTkmu6LFo07Ppi0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Toyball.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zClf3QcF/uUwIKcp+F4ID9T5214iojOpRrrh14/q9hQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-VertexNoise.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uNWbTxnhEKvHpA59DthY0mBMOQyhrPJw7jDahY52MFc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Wobble.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IfMvEk2Fga+YZsh/9nXLYdwNEJSc3ZtFsn/A0tBy6Rs=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/GLSL-Wood1.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dHENEaG6wiiB7PeV40b3J9CH7IFZLQdOChEthcc8p+c=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Grid.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xr+sIeHffwTioUcQ0FUS6+AqxlixvgVEEG1wJMnW7rM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Histogram.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WwtMTdmIQbqSByRAd/YfFC8zHply1z9Pdu2NfyFCOpI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Pixel.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i3K5uxU6XhDsucPviRzD4BqrakdIPJm8lozt1Vv1geM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Read.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/QA9U5iBEnSEKkSGu7vcYr7riivUZOdj/FqxUSDIx90=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Resize.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rs+meDCeoICLfQ0Xio6oH6S5P0W5omD27WWyX0jObPQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Stack.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OfaGm7e7NNqDO20C6QCtphyBvzkajXdeAfSwcLQGkwg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Texturing Properties Grid.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M+BgQObbn/b+pg3xykEVzZW3Zz+jRly0Hk7xkg8rKYY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Texturing Properties Reflection.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yKi4tRmJUsoaKjhItrySoN49FdQqw04gtxotEyWlv6A=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Image Texturing Properties Texture Tiling.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ERjlj5lxphJ0zzMq/Dqh1n7ceSuc9WxqBXFVwMvcNrk=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Inertia with Bouncy Limits.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S7TPYPGj3deFntWxZ9zlBvMCJ79FzR89X7MmJfmqRkQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Inertia with Limits.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YyUmQLW61lYkiP0k+KWX0FWAPRSptPtEZjZFi34I2y4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Inertia.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vzl2hBa497/eiqXmMHCyORR7QKLFqYNDVUtV6S2yzy8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Integrated Position.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bu25Jwt/LQGdKS4gr7N7kLxKcjWZHHEfz3s9w4VFBvY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Integrated Speed.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MZixV7Em53wTLb1cP5ptRwbJfAlsLKl2PsTr7rCguNQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Interaction.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K29jQ9SsNdPx+A3r+M5wkyER1X6yVjldLR2IR6XQCp0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Interpolation.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hKXwLD0wDOweWZO4ubQa/cpuH1vdaSfSy942opQ6dSY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Iterator Back to Front.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kFny1DKHVgFwHCXDSWlTPSq8eurtKwGXKl5wJWLgDzY=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Iterator Counter.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b3xExJ18qNWFQ0iHgXx76e1jnfMv/cMK2JMpSgW7XnI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Iterator Selection List.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XrS0zxl5XE8Oh3JuaBb7Rfu58R/r6TcS4ERkF//vigs=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Mouse Ribbon.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4DmF7V1qKMA40Q6ZpLIIAG8VKws0NL0tPMtirUEs6cc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Mouse Scroll Reset.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fjbUlPAE+/0/L9v26+SLhks2ylWd3d0YNGjmXkK+iQk=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Mouse Trails.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Deh/e6kqXzZnh3OGqOph1pgLnXm2C8B2S9VTbsUKOXI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/N-Body.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IJfemy5D78PUCVaZP6TXJBFzHsrw5RwpXWuJIWBYb7I=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Network Broadcaster.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ONR260XCYY3NQspe32WBVBwTIXeS/UriZGRpoqICBQc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Network Receiver.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xBdVJ4tBh8m5/+jLFucq0VQAAxYGR1E3Cv0C/ih2tSA=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Noise 3D.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zPaZC5fsoEps5wogLFI+JtAV/a6MDnKKSbhnex45PbU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/OSC Receiver.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+1+mK5GcO3mFoI45nAzsFWArUhNpSC9iHUlK9Oa87bs=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/OSC Sender.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ij4Fjjuy/ccah2QCXUeKEYuem0ykeb+Zc9fBxwSn9Dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Paint.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Mh4PCs2v3CH3bcrJmxRUhTpKmxDqZ6prVd6h6/Ei38=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Particle Blob.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RKmZvtpxm/MKARX0/lCzRAH2Z3y8MZEGj1kjWMxSmO4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Particle Explosion.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m9GVabX6godwdAgWtS9Ng/GxUselOEw/jhOSnTxMO48=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Particle System.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZhlHUmiiv8YsP62dlak/EymTFYMfCy05xo6SKUmKShc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pool/Data/Boat.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8BwPBSzdJMo6YRDDxNrHhAA8SwR6fTheZEo0UbYbKl4=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pool/Data/OrangePool.dae</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ORWxbklWldm3qeaPOMjx8s7D7qSc7aVFZwBdqxGsLnI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pool/Data/RacingYacht.dae</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LwU99uuf+6mmRyJZ3NyUTyzmqC9cak3O6siZPMNKOW0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pool/Data/Sails.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3Xv2+xDW2afoyXwd1+NVuaDnFs9zitT4bCF3zfH4do0=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pool/Water Surface.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UH0Kri5LN7NYXlG+4CRFjgMakqad9flCRIVXcNC4Cgg=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Pulse.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IoBLYpkgRGGOP8rAva6JUldMzuFWftkg7/5VtMeiYgA=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Quad.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VMcANsLANqFl20PAsk9zAVn9YGOrkpmPDE5ocdnQdwM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Random Nested Iterator.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PQG3dVUD6Io2VNALnxYdmX2w81BFdJcnNlvWW/8HaNQ=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Random.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mnnV8xcUrSIlKXw7se6kr/eyoc8B23Tzt4+Dk9pKINc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Render In Image.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z5Rh+GqACVsbcR8Hv4FRNSwmE9ilW5Ep549JlPpUKco=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Rendering Destination Dimensions.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KO7qh533/ktcRcmgOmRkNGCYDtHae4kljmgEpZHPORU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Shaded Material.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fn7WuDCOG6KG9QMbWAZQpPiyS1XSUw1mnjZHTzUACdU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Smoke Dancers/Data/Dancer.mov</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SWFEYQmZ1H7Ml9JvP8/4s5lcBkmTcn/dWifA/XgO0/M=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Smoke Dancers/Video Smoke.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			whG/hDMNbiWijQGl9XoQdV+sHGjbTI0z9QS6ZSLjLew=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Smooth Continuous Position.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EoMpy2hM3kT4xT3z28Ey+s5mG61/043ZsfOq1++ulbw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Stop Watch.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g6T99R7+250ft5neSBFH54Wzf3ggOzCDt0myJ2ERZ/Y=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Tablet Trail.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ey2WGpTkl+F9iTN3RQ6H9AbGa0S2I5/J6K/qKtSEWfI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_00.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_01.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_02.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_03.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_04.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_05.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_06.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_07.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_08.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_09.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_10.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_11.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_12.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_13.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_14.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_15.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/Images/user_16.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AmXelWEUo6N5RwpFpQ41Din8wzvvn3cFy03ciCjK/dw=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/The Twitterverse.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MqEKjzC4DZCkt/j0N0lFtCPVPV+Tul3rd2HGIUdGd+U=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/friends.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YtYX6jxRw6fCgXGf0sqmOcWhFPA34QlfYDuI54PviOM=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/friends_timeline.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M7W9+evJpF0an2SiewhwitzK4KU+FIsoSk+6jf0ofQA=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/The Twitterverse/XML/user_timeline.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+pj7daYiy//Ci/85EiJqcxTsgqdVzKwi0EpNKKNXEU8=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Timeline.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y0tkhie6+4o4Yp5pIGEidfdC6Ia0B8dhB3OuWeuLAqc=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Trackball.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mtLqEOnu2w+yTAa2Z8IHgPCXLxzgHD4FKiR9ofUXQNk=
+			</data>
+		</dict>
+		<key>Resources/Examples/Patches/Video Feedback.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hF60vP5wwJ3fp4Su39Ff17jQZ4AhNC9UuD25uxew/f4=
+			</data>
+		</dict>
+		<key>Resources/Examples/RSS Visualizers/Photocast Slideshow.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wES+9BcnAAuETz9iJRTBCshNEdDQ4kQmF5+MaZcDUko=
+			</data>
+		</dict>
+		<key>Resources/Examples/RSS Visualizers/ReadMe.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gau/5RbFDAe776s+6jgUHXRaP0bBuPFJcvLASpnceGI=
+			</data>
+		</dict>
+		<key>Resources/Examples/Screen Savers/Lorem Ipsum.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EHADB8vQ/p6muVGD7sg9G/eJBDcXqciJA30QMpvr4Eo=
+			</data>
+		</dict>
+		<key>Resources/Examples/Screen Savers/ReadMe.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BkIdr5lf+ilcOFvkM7SZkxNQDwD1dsRZVIzDrpKyRso=
+			</data>
+		</dict>
+		<key>Resources/Examples/Screen Savers/Retro.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eI/20LN7cstj1ehsSY18T2Q8pcRZZQnAUVK7g+jErnU=
+			</data>
+		</dict>
+		<key>Resources/Examples/Screen Savers/Security.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ejZj3XUCh3gbp3AtJgDJaUjS6EkWmBQFgpQ+9x/oaHI=
+			</data>
+		</dict>
+		<key>Resources/GFGraphPathGradient.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hw6ji1r7r+2WadgBc9fBaeE4SivBuTP580mF7KwWSDE=
+			</data>
+		</dict>
+		<key>Resources/HorizontalWipe.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ut6lVQAEmvjj0wtmWFckzEA2K5yDcoFKbEXGIJhDx1k=
+			</data>
+		</dict>
+		<key>Resources/Information.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aQjCTC3teVb9UGMzB98AhjvLQVw9za98TxNF1EnpRjs=
+			</data>
+		</dict>
+		<key>Resources/Inspector.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d+msU3Ui4tEXizD5PyEe3XVtUqdfM+1T9It3iFe1Jrs=
+			</data>
+		</dict>
+		<key>Resources/Macro.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RFCg3EmGAZYODXFWGQhEBr1312ToNcohl3IebedLwnU=
+			</data>
+		</dict>
+		<key>Resources/Mode Debug.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kjhJbPYUZIjBLSENVdCNokSwJYiZIJyq7cjb+m1C9c8=
+			</data>
+		</dict>
+		<key>Resources/Mode Edit.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9k7l4plewVuNxu5Uu3+JsKYDBAzCHrw8Sl0NcfB6l3k=
+			</data>
+		</dict>
+		<key>Resources/Mode Performance.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			md+zUokjUazz/LmULl7a4bVaOB4Wo8UhOXXWQCbKsYw=
+			</data>
+		</dict>
+		<key>Resources/Mode Profile.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RJnR083mOMrrprIoRhx8R+T4DgJ/0nKsy/vCfv8IsWc=
+			</data>
+		</dict>
+		<key>Resources/Opacity.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JElP7iOIbI5H89Xq86HK+rBhNTleO65iCGrpEYQUke8=
+			</data>
+		</dict>
+		<key>Resources/Parameters.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HfKlr862rvHRxNVbaTTWVAUS/UGlTRn1cglOzYftNUs=
+			</data>
+		</dict>
+		<key>Resources/Preferences.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jd1vMZkpulqWI9HF/7fO69Me89IP0wNzeV67Up2ADUY=
+			</data>
+		</dict>
+		<key>Resources/Present.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X39C1WW1PslbDaCed94MpPJDNBcp19xrCVQO4Wqsn3Y=
+			</data>
+		</dict>
+		<key>Resources/Private Defaults.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			neVnK6Baf02yGwOweyTa9lbkUNgRJQjAXQAF46IvTrs=
+			</data>
+		</dict>
+		<key>Resources/ReleaseNotes.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			okygW1OtBTyTP7qEl20Z4Gy/SFtlKvPySEoF00E34y8=
+			</data>
+		</dict>
+		<key>Resources/Run.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cbMi1B7MZOHJidKgvyUPacno7yepLfljHsmzTnXhpEo=
+			</data>
+		</dict>
+		<key>Resources/SaveImage.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			liiEVBe4qWaCDGMtofzx9ILORhpyu6OEd0Zbeid38yQ=
+			</data>
+		</dict>
+		<key>Resources/SettingsInspector.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w0psaAVUS3FyReoEhWnX9x5uQbNixqjbB913Rw8FNeQ=
+			</data>
+		</dict>
+		<key>Resources/SourceCode.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J+7VOy/fHFuSlsXFyn0m+eFGdbZV7ZOFDIZgfr4ct0A=
+			</data>
+		</dict>
+		<key>Resources/Stop.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			btpBot9gIZATRSZlXTELFZoYtma5wLYNiYIu1QW8bhE=
+			</data>
+		</dict>
+		<key>Resources/Templates/Blank Composition.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IRj01+4DBz6r6Qq112lbDFXShJ4zocq/FrGu11K6/SA=
+			</data>
+		</dict>
+		<key>Resources/Templates/Graphic Animation.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EGsRD5L+EFYQFczq+0Lv8TT2UzAv7RFS6KnClm6qwa8=
+			</data>
+		</dict>
+		<key>Resources/Templates/Graphic Transition.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q1T+yj1+Vf/ol0rcV+0vLg+df5VeWE77kD+RFs6wAZQ=
+			</data>
+		</dict>
+		<key>Resources/Templates/Image Filter.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lBMuzePZEEK93Re2xrZx5At1HDPCDmS0tgYHJgfFJxk=
+			</data>
+		</dict>
+		<key>Resources/Templates/Mesh Filter.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RA9esGF5a6ESxxujpJDzQyzhRpWrwRraw1mgfPPNijQ=
+			</data>
+		</dict>
+		<key>Resources/Templates/Music Visualizer.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/5UGvNAhZRSZ4kYU26/5cnCsNC1ODyOjyUP+j+YGrZ8=
+			</data>
+		</dict>
+		<key>Resources/Templates/RSS Visualizer.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ly7tZjBo7Hxxybqg2JO3GCXimFn4fBOs9+z2ALZylIw=
+			</data>
+		</dict>
+		<key>Resources/Templates/Screen Saver.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1eEUyy+kjt0eJFmtrXlDdtRKtJ8DZ0V/esNn3to8fmE=
+			</data>
+		</dict>
+		<key>Resources/Unsafe.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			58UDbSXxcxqo/iQaLkBkz0g3Acg4WtqiewdYQQh2Xuo=
+			</data>
+		</dict>
+		<key>Resources/Up.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6FtQLd/UH5zRMuANKOaCkPPYLL9eOh3ZFrIPHarhALA=
+			</data>
+		</dict>
+		<key>Resources/VerticalWipe.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Foatd1F5SMkQ5IpwmA7IX2dyHRyD81wKbIMvMn1j2ag=
+			</data>
+		</dict>
+		<key>Resources/Viewer.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SvtYmINxiDghkUuqiyuKdXSHqzuBxnmZ8bFgvbT7QWg=
+			</data>
+		</dict>
+		<key>Resources/Welcome.qtz</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M9+lhxdKQ+d+JcrrPLnGwQDVfuh9eXBurmDPv+ErXZ4=
+			</data>
+		</dict>
+		<key>Resources/Welcome.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6Q7s0ay4qdNWLB7uQ0rCnvxlmeR78+9bMXURp4LNUKo=
+			</data>
+		</dict>
+		<key>Resources/ZoomIn.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B35/9B7oOXtGHCGzsKDSnLTXee1sKhUomkgcfyO79yI=
+			</data>
+		</dict>
+		<key>Resources/ZoomOut.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7SBcVX35d9bFwi7acd/Uy/9Xr0CPcK9RCMl/SbGjQSk=
+			</data>
+		</dict>
+		<key>Resources/ZoomToDefault.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Jt8Mp7oYpacNsc7Su4/lWVBBueQPheG0E43UpFJn+xg=
+			</data>
+		</dict>
+		<key>Resources/ZoomToFit.tiff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H7rHvfsV6NkfsaqmJAQr7S3dfUixhCITdBeiG5xEG6U=
+			</data>
+		</dict>
+		<key>Resources/background_line.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cgz55kyqSGtOCS+WWyrkTkGhk1bXzs+Tip0fCd8WhCk=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1OO61JqtYwgOtVuC05eKTNGq1wEDbYXFASmjVomLiMo=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/MacOS/QCPlayer</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JmgjRUn3vOMPkeQ0DewDCirZ/H9fdRGQ0pW/ctDTwsE=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/PkgInfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			glAhkclISwTWhTdPmHmgBmBpxJuKyuegSwHTjQfo7KA=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/Resources/English.lproj/MainMenu.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5SfbtnALkcuBjg5E/f3TXQF+v0xHf765vW9PlwHBFdY=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7LZ5sbV1h+gWzuBf5rLy2Vu/M5onv5rjefq45KeNnsc=
+			</data>
+		</dict>
+		<key>Runtimes/QCPlayer.app/Contents/version.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v9GXgd4wUk4VCr8n6NZMcQHWaLqZr3tz5OTQxP0GBa8=
+			</data>
+		</dict>
+		<key>version.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hz/FE8uGlqIrbPjBSW5CxtUCg8UPl2s9xd0V6eVrRaE=
+			</data>
+		</dict>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^.*</key>
+		<true/>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^embedded\.provisionprofile$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

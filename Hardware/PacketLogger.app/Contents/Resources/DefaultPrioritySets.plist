@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Default</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict/>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Audio</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict>
+			<key>FastConnectDecoder</key>
+			<integer>6</integer>
+			<key>A2DP Control</key>
+			<integer>7</integer>
+			<key>SBC Audio Data</key>
+			<integer>3</integer>
+			<key>SCO Audio Data:Input</key>
+			<integer>3</integer>
+			<key>SCO Audio Data:Output</key>
+			<integer>3</integer>
+			<key>AptX Audio Data</key>
+			<integer>3</integer>
+			<key>AAC Audio Data</key>
+			<integer>3</integer>
+			<key>AAPDecoder</key>
+			<integer>6</integer>
+			<key>RFCOMM</key>
+			<integer>6</integer>
+			<key>HCI Event:Inquiry Result - EIR</key>
+			<integer>3</integer>
+			<key>HCI Event:Inquiry Result</key>
+			<integer>3</integer>
+			<key>AVCTP</key>
+			<integer>6</integer>
+			<key>AVRCPBrowsing</key>
+			<integer>6</integer>
+			<key>AVDTP</key>
+			<integer>7</integer>
+			<key>Syslog:BTFigE</key>
+			<integer>4</integer>
+			<key>Syslog:bluetoothaudiod.AudioDevice</key>
+			<integer>4</integer>
+			<key>Syslog:bluetoothaudiod.AVRCP</key>
+			<integer>4</integer>
+			<key>Syslog:bluetoothaudiod.AACP</key>
+			<integer>4</integer>
+			<key>Syslog:bluetoothaudiod</key>
+			<integer>4</integer>
+			<key>Syslog:MediaRemote</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>HID</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict>
+			<key>HIDInterrupt</key>
+			<integer>4</integer>
+			<key>HIDControl</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>LE</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict>
+			<key>SMPDecoder</key>
+			<integer>6</integer>
+			<key>ATTDecoder</key>
+			<integer>5</integer>
+			<key>HCI Event:LE:Advertising Report</key>
+			<integer>3</integer>
+			<key>HCI Command:LE Set Scan Enable</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Set Scan Parameters</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Start Encryption</key>
+			<integer>7</integer>
+			<key>HCI Command:LE Set Random Address</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Set Event Mask</key>
+			<integer>6</integer>
+			<key>HCI Command:LE Create Connection</key>
+			<integer>7</integer>
+			<key>HCI Command:LE Remove Device From White List</key>
+			<integer>7</integer>
+			<key>HCI Command:Vendor Specific Command [FD4D]</key>
+			<integer>6</integer>
+			<key>HCI Command:Vendor Specific Command [FD4A]</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Kernel</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict>
+			<key>HCI Event:Number Of Completed Packets</key>
+			<integer>2</integer>
+			<key>Kernel Debug</key>
+			<integer>2</integer>
+			<key>Kernel</key>
+			<integer>3</integer>
+			<key>LinkManagerProtocol</key>
+			<integer>1</integer>
+			<key>Syslog:Kernel</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Classic</string>
+		<key>default</key>
+		<true/>
+		<key>priorities</key>
+		<dict>
+			<key>ATTDecoder</key>
+			<integer>1</integer>
+			<key>ATTDecoder:Error</key>
+			<integer>1</integer>
+			<key>ATTDecoder:Notification/Indication</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Add Device To White List</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Clear White List</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Connection Update</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Create Connection</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Create Connection Cancel</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Long Term Key Request Negative Reply</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Long Term Key Request Reply</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Advertising Channel Tx Power</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Buffer Size</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Channel Map</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Local Supported Features</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Maximum Data Length</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Remote Used Features</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Suggested Default Data Length</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read Supported States</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Read White List Size</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Remote Connection Parameter Request Reply</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Remove Device From White List</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Set Default Phy</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Set Event Mask</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Set Random Address</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Set Scan Enable</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Set Scan Parameters</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Start Encryption</key>
+			<integer>1</integer>
+			<key>HCI Command:LE Write Suggested Default Data Length</key>
+			<integer>1</integer>
+			<key>HCI Command:Read Local Version Information</key>
+			<integer>1</integer>
+			<key>HCI Command:Set Advertising Set Random Address</key>
+			<integer>1</integer>
+			<key>HCI Command:Set Extended Advertising</key>
+			<integer>1</integer>
+			<key>HCI Command:Set Extended Advertising Data</key>
+			<integer>1</integer>
+			<key>MagnetDecoder</key>
+			<integer>1</integer>
+			<key>HCI Command:Set Extended Advertising Parameters</key>
+			<integer>1</integer>
+			<key>HCI Command:Set Extended Scan Parameters</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Create Extended Advertising Instance</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Extended Duplicate Filter</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Remove Extended Advertising Instance</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Set Extended Advertising</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Set Extended Advertising Data</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Set Extended Advertising Parameters</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Set Extended Scan Response Data</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Set Scan Enable</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:LE Update Extended Advertising Instance</key>
+			<integer>1</integer>
+			<key>HCI Command:VSC:Read Local Firmware Info</key>
+			<integer>1</integer>
+			<key>HCI Event:LE:Advertising Report</key>
+			<integer>1</integer>
+			<key>HCI Event:LE:Advertising Report:Error</key>
+			<integer>1</integer>
+			<key>HCI Event:LE:Connection Complete</key>
+			<integer>1</integer>
+			<key>Syslog:WirelessProximity:Error</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>priorities</key>
+		<dict>
+			<key>Magnet:Bluetooth</key>
+			<integer>10</integer>
+			<key>Magnet:CFNetwork</key>
+			<integer>10</integer>
+			<key>Magnet:ESP</key>
+			<integer>10</integer>
+			<key>Magnet:IDS</key>
+			<integer>10</integer>
+			<key>Magnet:LibNetCore</key>
+			<integer>10</integer>
+			<key>Magnet:LibNetCore Endpoint</key>
+			<integer>10</integer>
+			<key>Magnet:TCP</key>
+			<integer>10</integer>
+		</dict>
+		<key>default</key>
+		<true/>
+		<key>name</key>
+		<string>Magnet</string>
+	</dict>
+</array>
+</plist>

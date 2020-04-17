@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LargeSize</key>
+	<dict>
+		<key>imageName</key>
+		<string>RecButtonLarge.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>InteriorMask</key>
+			<dict>
+				<key>Center</key>
+				<string>{{153, 0}, {27, 17}}</string>
+				<key>Left</key>
+				<string>{{148, 0}, {5, 17}}</string>
+				<key>Right</key>
+				<string>{{180, 0}, {5, 17}}</string>
+			</dict>
+			<key>OffState</key>
+			<dict>
+				<key>Center</key>
+				<string>{{5, 0}, {27, 17}}</string>
+				<key>Left</key>
+				<string>{{0, 0}, {5, 17}}</string>
+				<key>Right</key>
+				<string>{{32, 0}, {5, 17}}</string>
+			</dict>
+			<key>OffStateHi</key>
+			<dict>
+				<key>Center</key>
+				<string>{{79, 0}, {27, 17}}</string>
+				<key>Left</key>
+				<string>{{74, 0}, {5, 17}}</string>
+				<key>Right</key>
+				<string>{{106, 0}, {5, 17}}</string>
+			</dict>
+			<key>OnState</key>
+			<dict>
+				<key>Center</key>
+				<string>{{44, 0}, {22, 17}}</string>
+				<key>Left</key>
+				<string>{{37, 0}, {7, 17}}</string>
+				<key>Right</key>
+				<string>{{66, 0}, {8, 17}}</string>
+			</dict>
+			<key>OnStateHi</key>
+			<dict>
+				<key>Center</key>
+				<string>{{116, 0}, {27, 17}}</string>
+				<key>Left</key>
+				<string>{{111, 0}, {5, 17}}</string>
+				<key>Right</key>
+				<string>{{143, 0}, {5, 17}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>

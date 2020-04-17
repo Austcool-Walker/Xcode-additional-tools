@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QDQuartz2DAccelerationEnabled</key>
+	<true/>
+	<key>QDQuartzAutoflushDrawing</key>
+	<false/>
+	<key>QDQuartzDebugEnabled</key>
+	<false/>
+	<key>QDQuartzExtremeEnabled</key>
+	<true/>
+	<key>QDQuartzFlashIdenticalScreenUpdates</key>
+	<false/>
+	<key>QDQuartzFlashScreenUpdates</key>
+	<false/>
+	<key>QDQuartzNoDelayAfterFlash</key>
+	<false/>
+	<key>QDQuartzShowOpaqueRegions</key>
+	<false/>
+	<key>QDQuartzShowDetachedRegions</key>
+	<false/>
+	<key>QDQuartzShowTrackingRectangles</key>
+	<false/>
+	<key>QDQuartzVSyncEnabled</key>
+	<true/>
+	<key>QDQuartzEnableErrorLogging</key>
+	<false/>
+	<key>QDQuartzEnableDisplayLogging</key>
+	<false/>
+</dict>
+</plist>

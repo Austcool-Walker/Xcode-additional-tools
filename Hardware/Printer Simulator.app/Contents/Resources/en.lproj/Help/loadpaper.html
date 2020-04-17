@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html
+<head>
+	<title>Load Paper Dialog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="keywords" content="load paper">
+    <meta name="AppleTitle" content="Printer Simulator Load Paper" />
+	<meta name="description" content="">
+</head>
+<body>
+<a name="LoadPaperPage"></a>
+<h1><img src="PrinterSimulator.png" align="bottom" width="32" height="32">&nbsp;&nbsp;The Load Paper Dialog</h1>
+<p>The Load Paper Dialog simulates paper size sensors. Some AirPrint printers include technology that senses the sizes of the paper loaded in the paper trays. This will become more common in future AirPrint printers. AirPrint will dynamically determine the paper size loaded, and automatically format printed content to fit the size of paper in the printer.</p>
+<p align="center"><img src="LoadPaper.png" width="423" height="303" alt="The Load Paper Dialog"><br>
+The Load Paper Dialog</p>
+<h2>What does this mean for an iOS application that implements printing?</h2>
+<p>An iOS application that simply provides printable content using the UIPrintInteractionController printingItem or printingItems API's will automatically have the printable content sized for the paper size detected. The UIPrintInteractionController printPaper property will represent the paper size and printable area detected. An application that includes a UIPrintPageRenderer subclass will use the UIPrintPageRenderer paperRect and printableRect to format content, and the sizes represented by those properties will automatically reflect the paper size loaded.</p>
+<p>An iOS application that implements the UIPrintInteractionControllerDelegate protocol, and chooses a UIPrintPaper using printInteractionController:choosePaper: method should be aware that when a printer knows the paper size or sizes loaded, the array of papers provided in the paperList parameter will <var>only</var> include the size or sizes loaded at the printer. An application expecting a specific size in the array provided in the paperList parameter must be able to gracefully handle different sizes.</p>
+<h2>Configuring the Simulated Printers</h2>
+<p>By default the Simulated InkJet, Simulated 2-Sided InkJet, and Simulated Color Laser all simulate AirPrint printers with paper size sensors. Clicking on the <var>Simulate Paper Size Sensors</var> checkbox item will toggle this setting. Each printer has a set of trays, and each tray can be configured to simulate having a paper size loaded, or none.  Each printer supports a different set of paper sizes. Click <var>OK</var> to configure the printers with the provided settings (this will cause the simulated printers to restart and disgard any currently printing jobs).</p>
+</body>
+</html>

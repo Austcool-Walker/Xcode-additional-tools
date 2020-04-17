@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Checking Data Transfer Rates">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Driver Monitor User Guide: Checking Data Transfer Rates</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006474-CH3-DontLinkElementID_7" title="Checking Data Transfer Rates" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16">OpenGL Driver Monitor User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH3-SW1" href="chapter_3_section_1.html#//apple_ref/doc/uid/TP40006474-CH3-SW1">Identifying and Solving Performance Issues</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Checking Data Transfer Rates</h2><p>To check data transfer rates, monitor the following:</p><ul class="ul"><li class="li"><p>VRAM usage. See whether VRAM usage is at capacity by looking at Current Video Memory in Use (<code>vramUsedBytes</code>) or Current Free Video Memory (<code>vramFreeBytes</code>). If it is at capacity, investigate whether the system is low on VRAM or whether VRAM usage is unusually high for an application running on the system.</p></li><li class="li"><p>Swap rate. A variety of parameters,  such as Buffer Swaps (<code>bufferSwapCount</code>), let you investigate the cause of unusually high swap rates. Check to see whether the swapped data is dynamic or static. If the data os static, make sure you are using caches, vertex buffer objects, or some other technique that’s optimized for static data. Use swaps only for dynamic data, and only when the data changes.</p></li><li class="li"><p>The time spent by the CPU waiting for the GPU. Look at CPU Wait for GPU (<code>hardwareWaitTime</code>). If the CPU spends a lot of time simply waiting, check to see whether you are calling <code>glFlush</code> or <code>glFinish</code> inappropriately. There are only a few cases where you actually need to use these calls, and these cases are rare. For more information, see the “Improving Performance” chapter in <i><!--a logicalPath="//apple_ref/doc/uid/TP40001987" target="_top" -->OpenGL Programming Guide for Mac OS X<!--/a--></i>.</p></li></ul>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

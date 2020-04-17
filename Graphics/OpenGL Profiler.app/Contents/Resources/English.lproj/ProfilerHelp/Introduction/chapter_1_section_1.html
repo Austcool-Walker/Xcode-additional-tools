@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Introduction">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Introduction</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH1" title="Introduction" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <!-- Previous button --><span style="margin-left: 8px"><a href="../GettedStarted/chapter_2_section_1.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <a name="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" title="Introduction" turn_anchor="no"></a><h1>Introduction</h1>
+<!-- This template is being used for both PDF and HTML. -->
+
+    
+    <h4>In this section:</h4>
+    
+    
+    <p class="blockquote">
+    
+        
+			
+        
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_21" href="chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_21">Organization of This Document</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_22" href="chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_22">See Also</a>
+				
+			<br>
+
+			
+        
+
+    </p><br>
+
+<p>OpenGL Profiler is an application that’s useful for debugging and assessing performance. It lets you look inside a running application and observe how the application uses OpenGL. It can track the OpenGL functions used by an application, how often each is used, and the execution time of each function. Using this data, you can determine how efficiently an OpenGL application uses the GPU. You can then use the data to guide application development, modifying those parts of the code that slow performance or appear to use resources inefficiently.</p><p>OpenGL Profiler has a variety of interactive features. After setting breakpoints, developers can investigate application resources (textures, programs, shaders, and so on), examine the values of OpenGL context parameters, look at buffer contents, and check other aspects of the OpenGL state.</p><a name="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_20" turn_anchor="yes"></a><p>You’ll want to read this document if you develop applications that use OpenGL on Mac OS X. By reading it, you’ll learn how to set up OpenGL Profiler, collect data, set breakpoints, and use the results to track down problems.</p><a name="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_21" title="Organization of This Document" turn_anchor="yes"></a><h2>Organization of This Document</h2><p>This document is organized into the following chapters:</p><ul class="ul"><li class="li"><p><span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW1" href="../GettedStarted/chapter_2_section_1.html#//apple_ref/doc/uid/TP40006475-CH20-SW1">&#8220;Getting Started&#8221;</a></span> shows how to get OpenGL Profiler running and how to start a profiling session.</p></li><li class="li"><p><span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW1" href="../Breakpoints/chapter_3_section_1.html#//apple_ref/doc/uid/TP40006475-CH30-SW1">&#8220;Using Breakpoints&#8221;</a></span> provides details on setting breakpoints and describes the tasks you can accomplish when your application pauses.</p></li><li class="li"><p><span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW1" href="../Strategies/chapter_4_section_1.html#//apple_ref/doc/uid/TP40006475-CH40-SW1">&#8220;Identifying and Solving Performance Issues&#8221;</a></span> gives advice on how to use OpenGL Profiler to track down and analyze performance issues in your application.</p></li><li class="li"><p><span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH50-SW9" href="../ProgrammaticControl/chapter_5_section_1.html#//apple_ref/doc/uid/TP40006475-CH50-SW9">&#8220;Controlling Profiling Programmatically&#8221;</a></span> describes how to add code to your application that will control various aspects of OpenGL Profiler during a profiling session.</p></li></ul><a name="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_22" title="See Also" turn_anchor="yes"></a><h2>See Also</h2><p>These documents contain information that can help you analyze and optimize your OpenGL code:</p><ul class="ul"><li class="li"><p><i><!--a logicalPath="//apple_ref/doc/uid/TP40001987" target="_top" -->OpenGL Programming Guide for Mac OS X<!--/a--></i> shows how to program using OpenGL on Mac OS X. You’ll want to read the chapter “Improving Performance” to get an overview of the best programming practices to use as well as how to use Apple’s tools (Shark and top) for identifying bottlenecks, and gathering and analyzing performance data.</p></li><li class="li"><p><i>OpenGL Driver Monitor User Guide</i> is a developer tool that lets you investigate how the graphics processing unit (GPU) works on a system-wide basis.</p></li></ul>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <!-- Previous button --><span style="margin-left: 8px"><a href="../GettedStarted/chapter_2_section_1.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

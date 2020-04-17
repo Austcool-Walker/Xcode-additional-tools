@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statuses>
+  <status>
+    <created_at>Wed May 16 12:00:00 +0000 2007</created_at>
+    <id>00000001</id>
+    <text>lorem ipsum</text>
+    <user>
+      <id>000001</id>
+      <name>User 01</name>
+      <screen_name>User 01</screen_name>
+      <location>Cupertino, CA</location>
+      <description>Generic User 000001</description>
+      <profile_image_url>./Images/user_01.png</profile_image_url>
+      <url>http://www.apple.com</url>
+      <protected>false</protected>
+    </user>
+  </status>
+  <status>
+    <created_at>Wed May 16 12:00:00 +0000 2007</created_at>
+    <id>00000002</id>
+    <text>dolor sit amet</text>
+    <user>
+      <id>000001</id>
+      <name>User 01</name>
+      <screen_name>User 01</screen_name>
+      <location>Cupertino, CA</location>
+      <description>Generic User 000001</description>
+      <profile_image_url>./Images/user_01.png</profile_image_url>
+      <url>http://www.apple.com</url>
+      <protected>false</protected>
+    </user>
+  </status>
+  <status>
+    <created_at>Wed May 16 12:00:00 +0000 2007</created_at>
+    <id>00000003</id>
+    <text>lorem ipsum</text>
+    <user>
+      <id>000007</id>
+      <name>User 07</name>
+      <screen_name>User 07</screen_name>
+      <location>Cupertino, CA</location>
+      <description>Generic User 000002</description>
+      <profile_image_url>./Images/user_07.png</profile_image_url>
+      <url>http://www.apple.com</url>
+      <protected>false</protected>
+    </user>
+  </status>
+  <status>
+    <created_at>Wed May 16 12:00:00 +0000 2007</created_at>
+    <id>00000004</id>
+    <text>lorem ipsum</text>
+    <user>
+      <id>000007</id>
+      <name>User 07</name>
+      <screen_name>User 07</screen_name>
+      <location>Cupertino, CA</location>
+      <description>Generic User 000002</description>
+      <profile_image_url>./Images/user_07.png</profile_image_url>
+      <url>http://www.apple.com</url>
+      <protected>false</protected>
+    </user>
+  </status>
+  <status>
+    <created_at>Wed May 16 12:00:00 +0000 2007</created_at>
+    <id>00000005</id>
+    <text>lorem ipsum</text>
+    <user>
+      <id>000012</id>
+      <name>User 12</name>
+      <screen_name>User 12</screen_name>
+      <location>Cupertino, CA</location>
+      <description>Generic User 000016</description>
+      <profile_image_url>./Images/user_12.png</profile_image_url>
+      <url>http://www.apple.com</url>
+      <protected>false</protected>
+    </user>
+  </status>
+</statuses>

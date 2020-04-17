@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Setting a Breakpoint">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Setting a Breakpoint</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH50-SW1" title="Setting a Breakpoint" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH50-SW9" href="chapter_5_section_1.html#//apple_ref/doc/uid/TP40006475-CH50-SW9">Controlling Profiling Programmatically</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_5_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_5_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Setting a Breakpoint</h2><p>Your application can programmatically set  breakpoints when it is attached to OpenGL Profiler.</p><p>To set a breakpoint:</p><ol class="ol"><li class="li"><p>Include the <code>CGLProfiler.h</code> and <code>CGLProfilerFunctionEnum.h</code> header files in your application.</p></li><li class="li"><p>Declare an array of three <code>GLint</code> values, set to the following:</p><ul class="ul"><li class="li"><p>The function ID, as defined in the header file <code>CGLProfilerFunctionEnum.h</code>.</p></li><li class="li"><p>The logical <code>OR</code> of <code>kCGLProfBreakBefore</code> or <code>kCGLProfBreakAfter</code>, indicating how you want the breakpoint to stop—before entering the OpenGL function, on return from it, or both.</p></li><li class="li"><p>A Boolean that turns the breakpoint on or off.</p></li></ul></li><li class="li"><p>Call the function <code><!--a logicalPath="//apple_ref/c/func/CGLSetOption" target="_top" -->CGLSetOption<!--/a--></code>, passing the array as a parameter.</p></li></ol><p><span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH50-SW10" href="chapter_5_section_2.html#//apple_ref/doc/uid/TP40006475-CH50-SW10">Listing 4-1</a></span> shows code that sets a breakpoint before the <code><!--a logicalPath="//apple_ref/c/func/CGLFlushDrawable" target="_top" -->CGLFlushDrawable<!--/a--></code> function.</p><a name="//apple_ref/doc/uid/TP40006475-CH50-SW10" title="Listing 4-1Code that sets a breakpoint" turn_anchor="yes"></a><p class="codesample"><b>Listing 4-1&nbsp;&nbsp;</b>Code that sets a breakpoint</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>#include "OpenGL/CGLProfiler.h"<span></span></pre></td></tr><tr><td scope="row"><pre>#include "OpenGL/CGLProfilerFunctionEnum.h"<span></span></pre></td></tr><tr><td scope="row"><pre>...<span></span></pre></td></tr><tr><td scope="row"><pre>   GLint myBreakpoint[] = { kCGLFECGLFlushDrawable, kCGLProfBreakBefore, 1;}<span></span></pre></td></tr><tr><td scope="row"><pre>   CGLSetOption( kCGLGOEnableBreakpoint, myBreakpoint );<span></span></pre></td></tr><tr><td scope="row"><pre>...<span></span></pre></td></tr></table></div>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_5_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_5_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

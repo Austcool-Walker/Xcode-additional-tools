@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Customizing Launch Settings">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Customizing Launch Settings</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH20-SW2" title="Customizing Launch Settings" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW1" href="chapter_2_section_1.html#//apple_ref/doc/uid/TP40006475-CH20-SW1">Getting Started</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_4.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_6.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Customizing Launch Settings</h2><p>Click the disclosure triangle next to Launch Settings in the OpenGL Profiler window to customize how your application launches. These options allow you to observe how your application operates under specific conditions.</p><br><div><img src = "../Art/launch_settings.jpg" alt = "Launch Settings in the OpenGL Profiler window." width="564" height="527"></div><br>
+<!-- This template is being used for both PDF and HTML. -->
+
+    
+    <h4>In this section:</h4>
+    
+    
+    <p class="blockquote">
+    
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_13" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_13">Setting a Custom Pixel Format</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_14" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_14">Using a Driver Emulation</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_15" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_15">Setting Environment Variables</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_16" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_16">Setting a Working Directory</a>
+				
+			<br>
+
+			
+        
+
+    </p><br>
+
+<a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_13" title="Setting a Custom Pixel Format" turn_anchor="yes"></a><h3>Setting a Custom Pixel Format</h3><p>Select “Use custom pixel format” and click Edit to try out different settings for pixel format attributes. You can quickly see the results of modifying attribute values without changing the source code of the application.</p><br><div><img src = "../Art/custom_pixel_format_2.jpg" alt = "The Custom Pixel Format window." width="598" height="400"></div><br><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_14" title="Using a Driver Emulation" turn_anchor="yes"></a><h3>Using a Driver Emulation</h3><p>OpenGL Profiler contains parameters and values for a variety of OpenGL drivers, not only those available in the system that you are currently running. This feature comes in handy if you want to examine the values that OpenGL returns for a particular driver. Emulation mode does not affect the performance of your application in any way. The purpose of this feature is to help you determine whether code that depends on certain hardware features works properly. Keep in mind that OpenGL Profiler does not replace the drivers your system.</p><p>When using a driver emulation, OpenGL Profiler does changes the return values for some of the <code>glGet</code> functions.  For example, if you enable the Rage 128 emulator for Mac OS X 10.2 and earlier, calling <code>glGetString(GL_RENDERER)</code> returns <code>"ATi Rage 128 Pro OpenGL Engine"</code> instead of the renderer that’s actually in your system. In addition, any  <code>glGet</code> functions that return driver-specific parameters will return the values you’d get if your application ran on the emulated card. For example, calling <code>glGetInteger(GL_MAX_LIGHTS, &amp;maxLights)</code> assigns <code>8</code> to <code>maxLights</code>.</p><p>To set a specific driver:</p><ol class="ol"><li class="li"><p>Choose a driver from the pop-up menu.</p><br><div class="item_figure"><img src = "../Art/driver_emulator_popup.jpg" alt = "The graphics driver pop-up menu." width="567" height="707"></div></li><li class="li"><p>Click View to inspect the parameters and values for the driver.</p><br><div class="item_figure"><img src = "../Art/emulator_inspector.jpg" alt = "The Emulator Inspector window." width="418" height="528"></div></li></ol><p>Apple provides a set of driver emulation files. These are property lists that you can edit yourself. You can create an emulation file for a driver not in the list by using a text editor and then saving the file in this directory:</p><p><code>~/Library/OpenGL Profiler/Driver Emulators</code></p><p>You’ll need to restart OpenGL Profiler to see the new file in the driver list.</p><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_15" title="Setting Environment Variables" turn_anchor="yes"></a><h3>Setting Environment Variables</h3><p>You can add environment variables by clicking the plus (+) button. Then enter the variable  name and its value. You can add any variable your application reads using <code>getenv(3)</code>.</p><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_16" title="Setting a Working Directory" turn_anchor="yes"></a><h3>Setting a Working Directory</h3><p>The working directory refers to your application’s current working directory. It’s the path returned by the function <code>getcwd(3)</code> and the same path that’s automatically prepended to any relative path in your application. If your application does not conform to Apple’s application wrapper scheme, you need to set the working directory so that your application can find resources such as texture maps. </p><p>For example, if you launch a nonconforming application from Finder, for this line of code to execute properly:</p><p><code>fopen("mytexture", "r+")</code></p><p>you need to set the working directory to the folder that contains <code>"mytexture"</code>.</p>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_4.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_6.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

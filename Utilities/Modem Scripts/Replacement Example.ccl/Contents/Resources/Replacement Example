@@ -1,0 +1,13 @@
+! Replacement.ccl
+
+! example overriding OldScript
+! If Replacement Example.ccl and OldScript (the flat script) are installed,
+! Other/OldScript will not show because of its inclusion in the Supersedes
+! list in Replacement.ccl's Default Personality.
+
+@ORIGINATE
+@ANSWER
+@HANGUP
+Note "Replacement Example running (possibly in place of OldScript) ..." 3
+
+Exit -6028

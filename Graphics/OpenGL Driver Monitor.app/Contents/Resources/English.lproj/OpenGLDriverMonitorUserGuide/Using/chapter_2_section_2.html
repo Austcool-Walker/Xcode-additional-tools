@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Setting Preferences">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Driver Monitor User Guide: Setting Preferences</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_9" title="Setting Preferences" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16">OpenGL Driver Monitor User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW5" href="chapter_2_section_1.html#//apple_ref/doc/uid/TP40006474-CH2-SW5">Using OpenGL Driver Monitor</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Setting Preferences</h2><p>For most cases, the default values that OpenGL Driver Monitor uses are optimal. Before you start using the driver monitor for the first time, you might want to familiarize yourself with its preferences to see whether the default values are acceptable for your needs.</p><p>To set preferences:</p><ol class="ol"><li class="li"><p>Choose OpenGL Driver Monitor > Preferences.</p></li><li class="li"><p>Adjust the sampling interval.</p><p>OpenGL Driver Monitor measures data throughput in bytes per sampling interval. For example, the default sampling interval is 1 second, so the data throughput is in bytes per second.</p><p>If you change the sampling interval, the OpenGL Driver Monitor measures values for that interval; the values are not normalized to a 1 second interval. For example, if you set the sampling interval to 2 seconds, and the throughput value is 500 bytes, the reported sampling rate is 500 bytes per interval which, in this case, is 250 bytes per second.</p></li><li class="li"><p>Adjust the maximum data samples.</p><p>The value is the maximum number bytes per sampling interval. The default is 2048. </p></li><li class="li"><p>Adjust graph colors.</p><p>If you don’t like that default colors for the graph background or graph labels, click the color wells and choose other colors.</p></li><li class="li"><p>Select whether or not to use descriptive parameter names.</p><p>OpenGL Driver Monitor provides a list of parameters from which you choose the ones you want to track. You can either view the list as the symbolic names used by driver monitor (such as <code>command2DBytes</code>, <code>gartMapOutBytes</code>, <code>finishAll2DWaitTime</code>) or as descriptive names (such as 2D Command Data, AGP Data Unmapped, CPU Wait for Operations to Finish).</p></li><li class="li"><p>If you want to monitor this computer remotely, select “Enable remote monitor.“</p><p>See <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW4" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006474-CH2-SW4">&#8220;Monitoring an OpenGL Driver Remotely&#8221;</a></span> for additional details.</p></li><li class="li"><p>Click Apply to commit to the changes you made. Then click OK to close the Preferences window.</p></li></ol>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

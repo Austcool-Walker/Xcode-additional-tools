@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Checking for Optimal Data Types and Formats">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Checking for Optimal Data Types and Formats</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_23" title="Checking for Optimal Data Types and Formats" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW1" href="chapter_4_section_1.html#//apple_ref/doc/uid/TP40006475-CH40-SW1">Identifying and Solving Performance Issues</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_3.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_5.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Checking for Optimal Data Types and Formats</h2><p>To get the best performance, make sure your data is using an optimal data type and format combination. You won’t get the best performance otherwise.</p><p>Ideally, you’ll want to use:</p><p><code>GL_BGRA</code>, <code>GL_UNSIGNED_INT_8_8_8_8_REV</code></p><p>This is the fastest data type and format combination. If it isn’t fast, you may have a problem with your driver.</p><p>If that’s not possible, you can often get acceptable performance from the following. Just make sure to test these combinations on a device-by-device basis:</p><p><code>GL_BGRA</code>, <code>GL_UNSIGNED_SHORT_1_5_5_5_REV</code></p><p><code>GL_YCBR_422_APPLE</code>, <code>GL_UNSIGNED_SHORT_8_8_REV_APPLE</code></p><p>OpenGL Profiler does not know what the inbound data format is. So you need to check the point at which your data gets uploaded by OpenGL by performing this steps:</p><ol class="ol"><li class="li"><p>Select Collect Trace and Include Backtraces in the OpenGL Profiler window.</p></li><li class="li"><p>Set a breakpoint where your data is uploaded.</p></li><li class="li"><p>When your application breaks, click Call Stack in the Trace window.</p></li></ol>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_3.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_5.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

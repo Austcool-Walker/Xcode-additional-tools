@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1800</key>
+	<string>Generic Access</string>
+	<key>1801</key>
+	<string>Generic Attribute</string>
+	<key>1802</key>
+	<string>Immediate Alert</string>
+	<key>1803</key>
+	<string>Link Loss</string>
+	<key>1804</key>
+	<string>Tx Power</string>
+	<key>1805</key>
+	<string>Current Time Service</string>
+	<key>1806</key>
+	<string>Reference Time Update Service</string>
+	<key>1807</key>
+	<string>Next DST Change Service</string>
+	<key>1808</key>
+	<string>Glucose</string>
+	<key>1809</key>
+	<string>Health Thermometer</string>
+	<key>180A</key>
+	<string>Device Information</string>
+	<key>180D</key>
+	<string>Heart Rate</string>
+	<key>180E</key>
+	<string>Phone Alert Status Service</string>
+	<key>180F</key>
+	<string>Battery Service</string>
+	<key>1810</key>
+	<string>Blood Pressure</string>
+	<key>1811</key>
+	<string>Alert Notification Service</string>
+	<key>1812</key>
+	<string>Human Interface Device</string>
+	<key>1813</key>
+	<string>Scan Parameters</string>
+	<key>1814</key>
+	<string>Running Speed and Cadence</string>
+	<key>1815</key>
+	<string>Automation IO</string>
+	<key>1816</key>
+	<string>Cycling Speed and Cadence</string>
+	<key>1818</key>
+	<string>Cycling Power</string>
+	<key>1819</key>
+	<string>Location and Navigation</string>
+	<key>181A</key>
+	<string>Environmental Sensing</string>
+	<key>181B</key>
+	<string>Body Composition</string>
+	<key>181C</key>
+	<string>User Data</string>
+	<key>181D</key>
+	<string>Weight Scale</string>
+	<key>181E</key>
+	<string>Bond Management Service</string>
+	<key>181F</key>
+	<string>Continuous Glucose Monitoring</string>
+	<key>1820</key>
+	<string>Internet Protocol Support Service</string>
+	<key>1821</key>
+	<string>Indoor Positioning</string>
+	<key>1822</key>
+	<string>Pulse Oximeter Service</string>
+	<key>1823</key>
+	<string>HTTP Proxy</string>
+	<key>1824</key>
+	<string>Transport Discovery</string>
+	<key>1825</key>
+	<string>Object Transfer Service</string>
+	<key>1826</key>
+	<string>Fitness Machine</string>
+	<key>1827</key>
+	<string>Mesh Provisioning Service</string>
+	<key>1828</key>
+	<string>Mesh Proxy Service</string>
+	<key>1829</key>
+	<string>Reconnection Configuration</string>
+	<key>2803</key>
+	<string>GATT Characteristic Declaration</string>
+	<key>2802</key>
+	<string>GATT Include Declaration</string>
+	<key>2800</key>
+	<string>GATT Primary Service Declaration</string>
+	<key>2801</key>
+	<string>GATT Secondary Service Declaration</string>
+	<key>2905</key>
+	<string>Characteristic Aggregate Format</string>
+	<key>2900</key>
+	<string>Characteristic Extended Properties</string>
+	<key>2904</key>
+	<string>Characteristic Presentation Format</string>
+	<key>2901</key>
+	<string>Characteristic User Description</string>
+	<key>2902</key>
+	<string>Client Characteristic Configuration</string>
+	<key>2907</key>
+	<string>External Report Reference</string>
+	<key>2909</key>
+	<string>Number of Digitals</string>
+	<key>2908</key>
+	<string>Report Reference</string>
+	<key>2903</key>
+	<string>Server Characteristic Configuration</string>
+	<key>290A</key>
+	<string>Trigger Setting</string>
+	<key>2906</key>
+	<string>Valid Range</string>
+	<key>2A43</key>
+	<string>Alert Category ID</string>
+	<key>2A42</key>
+	<string>Alert Category ID Bit Mask</string>
+	<key>2A06</key>
+	<string>Alert Level</string>
+	<key>2A44</key>
+	<string>Alert Notification Control Point</string>
+	<key>2A3F</key>
+	<string>Alert Status</string>
+	<key>2A01</key>
+	<string>Appearance</string>
+	<key>2A19</key>
+	<string>Battery Level</string>
+	<key>2A49</key>
+	<string>Blood Pressure Feature</string>
+	<key>2A35</key>
+	<string>Blood Pressure Measurement</string>
+	<key>2A38</key>
+	<string>Body Sensor Location</string>
+	<key>2A22</key>
+	<string>Boot Keyboard Input Report</string>
+	<key>2A32</key>
+	<string>Boot Keyboard Output Report</string>
+	<key>2A33</key>
+	<string>Boot Mouse Input Report</string>
+	<key>2A5C</key>
+	<string>CSC Feature</string>
+	<key>2A5B</key>
+	<string>CSC Measurement</string>
+	<key>2A2B</key>
+	<string>Current Time</string>
+	<key>2A08</key>
+	<string>Date Time</string>
+	<key>2A0A</key>
+	<string>Day Date Time</string>
+	<key>2A09</key>
+	<string>Day of Week</string>
+	<key>2A00</key>
+	<string>Device Name</string>
+	<key>2A0D</key>
+	<string>DST Offset</string>
+	<key>2A0C</key>
+	<string>Exact Time 256</string>
+	<key>2A26</key>
+	<string>Firmware Revision String</string>
+	<key>2A51</key>
+	<string>Glucose Feature</string>
+	<key>2A18</key>
+	<string>Glucose Measurement</string>
+	<key>2A34</key>
+	<string>Glucose Measurement Context</string>
+	<key>2A27</key>
+	<string>Hardware Revision String</string>
+	<key>2A39</key>
+	<string>Heart Rate Control Point</string>
+	<key>2A37</key>
+	<string>Heart Rate Measurement</string>
+	<key>2A4C</key>
+	<string>HID Control Point</string>
+	<key>2A4A</key>
+	<string>HID Information</string>
+	<key>2A2A</key>
+	<string>IEEE 11073-20601 Regulatory Certification Data List</string>
+	<key>2A36</key>
+	<string>Intermediate Cuff Pressure</string>
+	<key>2A1E</key>
+	<string>Intermediate Temperature</string>
+	<key>2A0F</key>
+	<string>Local Time Information</string>
+	<key>2A29</key>
+	<string>Manufacturer Name String</string>
+	<key>2A21</key>
+	<string>Measurement Interval</string>
+	<key>2A24</key>
+	<string>Model Number String</string>
+	<key>2A46</key>
+	<string>New Alert</string>
+	<key>2A04</key>
+	<string>Peripheral Preferred Connection Parameters</string>
+	<key>2A02</key>
+	<string>Peripheral Privacy Flag</string>
+	<key>2A50</key>
+	<string>PnP ID</string>
+	<key>2A4E</key>
+	<string>Protocol Mode</string>
+	<key>2A03</key>
+	<string>Reconnection Address</string>
+	<key>2A52</key>
+	<string>Record Access Control point (Test Version)</string>
+	<key>2A14</key>
+	<string>Reference Time Information</string>
+	<key>2A4D</key>
+	<string>Report</string>
+	<key>2A4B</key>
+	<string>Report Map</string>
+	<key>2A40</key>
+	<string>Ringer Control Point</string>
+	<key>2A41</key>
+	<string>Ringer Setting</string>
+	<key>2A54</key>
+	<string>RSC Feature</string>
+	<key>2A53</key>
+	<string>RSC Measurement</string>
+	<key>2A4F</key>
+	<string>Scan Interval Window</string>
+	<key>2A31</key>
+	<string>Scan Refresh</string>
+	<key>2A25</key>
+	<string>Serial Number String</string>
+	<key>2A05</key>
+	<string>Service Changed</string>
+	<key>2A28</key>
+	<string>Software Revision String</string>
+	<key>2A47</key>
+	<string>Supported New Alert Category</string>
+	<key>2A48</key>
+	<string>Supported Unread Alert Category</string>
+	<key>2A23</key>
+	<string>System ID</string>
+	<key>2A1C</key>
+	<string>Temperature Measurement</string>
+	<key>2A1D</key>
+	<string>Temperature Type</string>
+	<key>2A12</key>
+	<string>Time Accuracy</string>
+	<key>2A13</key>
+	<string>Time Source</string>
+	<key>2A16</key>
+	<string>Time Update Control Point</string>
+	<key>2A17</key>
+	<string>Time Update State</string>
+	<key>2A11</key>
+	<string>Time with DST</string>
+	<key>2A0E</key>
+	<string>Time Zone</string>
+	<key>2A07</key>
+	<string>Tx Power Level</string>
+	<key>2A45</key>
+	<string>Unread Alert Status</string>
+	<key>2A5A</key>
+	<string>Aggregate Input</string>
+	<key>2A58</key>
+	<string>Analog Input</string>
+	<key>2A59</key>
+	<string>Analog Output</string>
+	<key>2A56</key>
+	<string>Digital Input</string>
+	<key>2A57</key>
+	<string>Digital Output</string>
+	<key>2A0B</key>
+	<string>Exact Time 100</string>
+	<key>2A3E</key>
+	<string>Network Availability</string>
+	<key>2A3C</key>
+	<string>Scientific Temperature in Celsius</string>
+	<key>2A10</key>
+	<string>Secondary Time Zone</string>
+	<key>2A3D</key>
+	<string>String</string>
+	<key>2A1F</key>
+	<string>Temperature in Celsius</string>
+	<key>2A20</key>
+	<string>Temperature in Fahrenheit</string>
+	<key>2A15</key>
+	<string>Time Broadcast</string>
+	<key>2A1B</key>
+	<string>Battery Level State</string>
+	<key>2A1A</key>
+	<string>Battery Power State</string>
+	<key>2A5F</key>
+	<string>Pulse Oximetry Continuous Measurement</string>
+	<key>2A62</key>
+	<string>Pulse Oximetry Control Point</string>
+	<key>2A61</key>
+	<string>Pulse Oximetry Features</string>
+	<key>2A60</key>
+	<string>Pulse Oximetry Pulsatile Event</string>
+	<key>2A5E</key>
+	<string>Pulse Oximetry Spot-Check Measurement</string>
+	<key>2A3A</key>
+	<string>Removable</string>
+	<key>2A3B</key>
+	<string>Service Required</string>
+	<key>7905F431-B5CE-4E99-A40F-4B1E122D00D0</key>
+	<string>Apple Notification Center Service</string>
+	<key>9FBF120D-6301-42D9-8C58-25E699A21DBD</key>
+	<string>Authentication Version</string>
+	<key>69D1D8F3-45E1-49A8-9821-9BBDFDAAD9D9</key>
+	<string>Control Point</string>
+	<key>22EAC6E9-24D6-4BB5-BE44-B36ACE7C7BFB</key>
+	<string>Data Source</string>
+	<key>7D74F4BD-C74A-4431-862C-CCE884371592</key>
+	<string>LE Audio Service</string>
+	<key>24E1DFF3-AE90-41BF-BFBD-2CF8DF42BF87</key>
+	<string>Battery Level</string>
+	<key>8D17AC2F-1D54-4742-A49A-EF4B20784EB3</key>
+	<string>Left/Right</string>
+	<key>C97D21D3-D79D-4DF8-9230-BB33FA805F4E</key>
+	<string>HI ID</string>
+	<key>497EEB9E-B194-4F35-BC82-36FD300482A6</key>
+	<string>Other HI ID</string>
+	<key>F3F594F9-E210-48F3-85E2-4B0CF235A9D3</key>
+	<string>Mic Volume</string>
+	<key>6AC46200-24EA-46D8-A136-81133C65840A</key>
+	<string>2nd Stream Volume</string>
+	<key>21FF4275-C41D-4486-A0E3-DC11138BCDE6</key>
+	<string>Available Programs Bitmap</string>
+	<key>A391C6F1-20BB-495A-ABBF-2017098FBC61</key>
+	<string>Current Active Program</string>
+	<key>ADC3023D-BFD2-43FD-86F6-7AE05A619092</key>
+	<string>Program Data Version</string>
+	<key>A28B6BE1-2FA4-42F8-AEB2-B15A1DBD837A</key>
+	<string>Program ID Name Selector</string>
+	<key>7BE94A55-8D91-4592-BC0F-EA3664CCD3A9</key>
+	<string>Program Name</string>
+	<key>9C12A3DB-9CE8-4865-A217-D394B3BC9311</key>
+	<string>Program Category</string>
+	<key>662F29A6-74B5-4312-BD77-45A2DE714A5E</key>
+	<string>Audio Mixing</string>
+	<key>8341F2B4-C013-4F04-8197-C4CDB42E26DC</key>
+	<string>Authentication</string>
+	<key>2BDCAEBE-8746-45DF-A841-96B840980FB7</key>
+	<string>Certificate Part A</string>
+	<key>2BDCAEBE-8746-45DF-A841-96B840980FB8</key>
+	<string>Certificate Part B</string>
+	<key>30E69638-3752-4FEB-A3AA-3226BCD05ACE</key>
+	<string>Challenge Response</string>
+	<key>9BD708D7-64C7-4E9F-9DED-F6B6C4551967</key>
+	<string>DoAP</string>
+	<key>F195B8FB-A9E2-4401-858B-2F87A06928A8</key>
+	<string>DoAP Supported Codecs</string>
+	<key>E1F9B835-7E47-413D-AF94-C68E574B8F7E</key>
+	<string>DoAP Selected Codec</string>
+	<key>A08CE5EF-698A-42A2-B980-7F3AC00B3845</key>
+	<string>DoAP Start Streaming</string>
+	<key>6288EA2D-7B89-47AD-890B-9FA6BF3CFC58</key>
+	<string>DoAP Stop Streaming</string>
+	<key>3F1C161D-6473-4746-91F5-6D27610780C6</key>
+	<string>DoAP Send Data</string>
+	<key>C7C6947D-3165-4BCB-8EAF-B328896CB531</key>
+	<string>DoAP Event Indicator</string>
+	<key>D0611E78-BBB4-4591-A5F8-487910AE4366</key>
+	<string>Continuity Service</string>
+	<key>8667556C-9A37-4C91-84ED-54EE27D90049</key>
+	<string>Continuity Characteristic</string>
+	<key>03B80E5A-EDE8-4B33-A751-6CE34EC4C700</key>
+	<string>LE MIDI</string>
+	<key>ABDD3056-28FA-441D-A470-55A75A52553A</key>
+	<string>L2CAP</string>
+	<key>89D3502B-0F36-433A-8EF4-C502AD55F8DC</key>
+	<string>Apple Media Service</string>
+	<key>9B3C81D8-57B1-4A8A-B8DF-0E56F7CA51C2</key>
+	<string>AMS Remote Command</string>
+	<key>2F7CABCE-808D-411F-9A0C-BB92BA96C102</key>
+	<string>AMS Entity Update</string>
+	<key>C6B2F38C-23AB-46D8-A6AB-A3A870BBD5D7</key>
+	<string>AMS Entity Attribute</string>
+	<key>9AA4730F-B25C-4CC3-B821-C931559FC196</key>
+	<string>Apple Accessory Reconnect Service</string>
+	<key>9FA480E0-4967-4542-9390-D343DC5D04AE</key>
+	<string>Nearby Service</string>
+	<key>AF0BADB1-5B99-43CD-917A-A77BC549E3CC</key>
+	<string>Nearby Characteristic</string>
+	<key>7DFC83D5-7D1C-4951-86AA-8D9728F8D66C</key>
+	<string>Apple Service</string>
+	<key>78C8632F-BBB8-4711-B746-7DB4FFFED1CD</key>
+	<string>Apple Debug Advertising Characteristic</string>
+	<key>49079D96-5670-4BF8-904B-CF8CC95895CE</key>
+	<string>Apple BA Debug Keys Characteristic</string>
+	<key>5D2264AD-8065-4777-BE10-F601B13255A3</key>
+	<string>Apple Logging Debug Characteristic</string>
+</dict>
+</plist>

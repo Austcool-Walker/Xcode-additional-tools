@@ -1,0 +1,110 @@
+BODY {
+  background: white;
+  color: black;
+  font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+H1, H2, H3, H4, H5, H6, P, TD, TH {
+  font-family: lucida grande, geneva, helvetica, arial, sans-serif;
+}
+
+A:link, A:visited {
+  font-weight: inherit;
+  text-decoration: underline;
+  color: #000099;
+}
+
+A:link:hover, A:visited:hover, A:active {
+  color: #990099;
+}
+
+FORM {
+  display: inline;
+}
+
+INPUT[TYPE="TEXT"], TEXTAREA {
+  font-family: monaco, courier, monospace;
+}
+
+INPUT[TYPE="IMAGE"] {
+  border: none;
+  padding: 2pt;
+  vertical-align: bottom;
+}
+
+DIV.header {
+  background: #f0f0f0;
+  border-bottom: solid 2px #999999;
+  color: black;
+  display: block;
+  padding: 5px 10px;
+}
+
+DIV.footer {
+  background: #f0f0f0;
+  border-top: solid 2px #999999;
+  color: gray;
+  display: block;
+  font-size: 80%;
+  padding: 5px 10px;
+}
+
+DIV.body {
+  display: block;
+  padding: 5px 10px;
+}
+
+DIV.printer {
+  border-top: thin solid #e0e0e0;
+  display: block;
+  padding: 5px 10px;
+}
+
+IMG.printer {
+  float: left;
+  height: 128;
+  padding-right: 10px;
+  vertical-align: top;
+  width: 128;
+}
+
+SPAN.printer {
+  float: right;
+  margin-right: 10px;
+}
+
+DIV.job {
+  display: block;
+}
+
+TABLE.job {
+  border-collapse: collapse;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+TABLE.job TD {
+  border-bottom: solid thin #eeeeee;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+TABLE.job TH {
+  background: white;
+  border-bottom: solid thin #cccccc;
+  color: #888888;
+  padding-top: 10px;
+  padding-left: 5px;
+  text-align: left;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+TABLE.job TR:nth-child(even) {
+  background: #f8f8f8;
+}
+
+TABLE.job TR:nth-child(odd) {
+  background: #f4f4f4;
+}

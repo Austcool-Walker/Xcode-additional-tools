@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entries>
+	<entry>
+		<label>San Francisco</label>
+		<value>0.5</value>
+	</entry>	
+	<entry>
+		<label>Los Angeles</label>
+		<value>0.2</value>
+	</entry>
+	<entry>
+		<label>New York</label>
+		<value>0.7</value>
+	</entry>
+</entries>

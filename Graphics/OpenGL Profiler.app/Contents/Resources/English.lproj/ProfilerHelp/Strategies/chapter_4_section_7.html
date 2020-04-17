@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Evaluating The Affect Of The Multithreaded OpenGL Engine">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Evaluating The Affect Of The Multithreaded OpenGL Engine</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_24" title="Evaluating The Affect Of The Multithreaded OpenGL Engine" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW1" href="chapter_4_section_1.html#//apple_ref/doc/uid/TP40006475-CH40-SW1">Identifying and Solving Performance Issues</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_6.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_8.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Evaluating The Affect Of The Multithreaded OpenGL Engine</h2><p>In Mac OS X v10.5 and later, the OpenGL framework can offload processing onto a separate thread that runs on a different CPU core. You use the <code><!--a logicalPath="//apple_ref/c/func/CGLEnable" target="_top" -->CGLEnable<!--/a--></code> function to enable multithreaded execution programmatically using this code:</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>#include &lt;OpenGL/OpenGL.h><span></span></pre></td></tr><tr><td scope="row"><pre> <span></span></pre></td></tr><tr><td scope="row"><pre>CGLError err = 0;<span></span></pre></td></tr><tr><td scope="row"><pre>CGLContextObj ctx = CGLGetCurrentContext();<span></span></pre></td></tr><tr><td scope="row"><pre> <span></span></pre></td></tr><tr><td scope="row"><pre>// Enable the multi-threading<span></span></pre></td></tr><tr><td scope="row"><pre>err =  CGLEnable( ctx, kCGLCEMPEngine);<span></span></pre></td></tr><tr><td scope="row"><pre> <span></span></pre></td></tr><tr><td scope="row"><pre>if (err != kCGLNoError )<span></span></pre></td></tr><tr><td scope="row"><pre>{<span></span></pre></td></tr><tr><td scope="row"><pre>     // Multi-threaded execution is possibly not available<span></span></pre></td></tr><tr><td scope="row"><pre>     // Insert your code to take appropriate action<span></span></pre></td></tr><tr><td scope="row"><pre>}<span></span></pre></td></tr></table></div><p>For more details see Technical Note  TN2085: <i><!--a logicalPath="//apple_ref/doc/uid/DTS10004075" target="_top" -->Enabling multi-threaded execution of the OpenGL framework<!--/a--></i>. </p><p>After enabling multithreading, some applications see a dramatic increase in OpenGL performance; others might not. In general, the multithreaded OpenGL engine is a good option for applications that are CPU bound.</p><p>If your application enables the multithreaded OpenGL engine, it’s a good idea to check whether it actually improves performance.  After you programmatically enable multithreading, evaluate its affect by following these steps:</p><ol class="ol"><li class="li"><p>Launch or attach to the application of interest.</p></li><li class="li"><p>In the main OpenGL Profiler window, check the frame rate at a point in your application that is repeatable. You’ll check this same point later.</p></li><li class="li"><p>Choose Views > Breakpoints.</p></li><li class="li"><p>Make sure the multithreaded control option is set to “App control.”</p></li><li class="li"><p>In the main OpenGL Profiler window, check the frame rate.</p></li><li class="li"><p>Set a breakpoint on a function.</p><p>Although you can choose any function, typically you’d set a breakpoint on <code>CGLFlushDrawable</code> for a double-buffered rendering context or <code>glFlush</code> for a single-buffered rendering context.</p></li><li class="li"><p>When your application pauses, select the “Force off” option for multithreaded control.</p></li><li class="li"><p>Press Continue to resume execution of your application.</p></li><li class="li"><p>In the main OpenGL Profiler window, check the frame rate.</p><p>Compare this frame rate to the rate you observed when using the multithreaded OpenGL engine.</p></li></ol><div class="notebox"><a name="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_32" title="Note" turn_anchor="yes"></a><p><b>Note:</b>&nbsp;If you are using the multithreaded OpenGL engine, debugging is often easier after you use the option in OpenGL Profiler to turn off multithreading.</p><p></p></div>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_6.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_8.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

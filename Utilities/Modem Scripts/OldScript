@@ -1,0 +1,11 @@
+! OldScript
+
+! exists to be overridden
+! see OldScript.ccl and Replacement Example.ccl for details
+
+@ORIGINATE
+@ANSWER
+@HANGUP
+Note "OldScript.ccl or Replacement Example.ccl hides OldScript (in UI)" 3
+
+Exit -6028

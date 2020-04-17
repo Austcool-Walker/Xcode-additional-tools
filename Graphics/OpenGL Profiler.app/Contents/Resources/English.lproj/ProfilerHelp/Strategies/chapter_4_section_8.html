@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Monitoring GPU Use">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Monitoring GPU Use</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH40-DontLinkElementID_25" title="Monitoring GPU Use" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW1" href="chapter_4_section_1.html#//apple_ref/doc/uid/TP40006475-CH40-SW1">Identifying and Solving Performance Issues</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_7.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_9.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Monitoring GPU Use</h2><p>Applications that can’t use the GPU for some reason (such as the graphics card does not support some of the OpenGL extensions that your code uses) use the software renderer as a fallback. If you notice a drop in the performance of your application, you may want to check whether the application is using the GPU as you expect. </p><p>Starting in Mac OS X v10.5, you can set your application to break whenever it uses the software renderer as a fallback. (See <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW6" href="chapter_4_section_6.html#//apple_ref/doc/uid/TP40006475-CH40-SW6">&#8220;Checking for Application Errors, Thread Conflicts, and Software Fallbacks.&#8221;</a></span>) Prior to Mac OS X v10.5, you can monitor the GPU use of your application whenever your application pauses at a breakpoint. The best breakpoints to check are: </p><ul class="ul"><li class="li"><p><code>CGLFlushDrawable</code></p></li><li class="li"><p>After <code>glUseProgramObjectARB</code></p></li><li class="li"><p>After <code>glBindProgramARB</code></p></li><li class="li"><p>Any <code>glDraw</code> or related command, including the following:</p><ul class="simple-spaceabove"><li><p><code>glAccum</code></p></li><li><p><code>glBegin</code></p></li><li><p><code>glBlitFramebufferEXT</code></p></li><li><p><code>glBitmap</code></p></li><li><p><code>glClear</code></p></li><li><p><code>glCopyPixels</code></p></li><li><p><code>glDrawPixels</code></p></li><li><p><code>glReadPixels</code></p></li><li><p><code>glCopyTexSubImage*D</code></p></li><li><p><code>glCopyTexImage*D</code></p></li><li><p><code>glDrawArrays</code></p></li><li><p><code>glDrawElements</code></p></li><li><p><code>glDrawRangeElements</code></p></li></ul></li></ul><p>When your application pauses at these breakpoints, check the values of <code>kCGLCPGPUFragmentProcessing</code> and <code>kCGLCPGPUVertexProcessing</code> shown in the Call Stack pane of the Breakpoints window. A value of  <code>GL_TRUE</code> indicates that your application is using the GPU for the process associated with the constant.</p>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_7.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_9.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

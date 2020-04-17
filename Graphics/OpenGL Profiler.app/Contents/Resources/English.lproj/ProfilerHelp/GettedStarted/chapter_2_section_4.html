@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Starting a Profiling Session">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Starting a Profiling Session</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_10" title="Starting a Profiling Session" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW1" href="chapter_2_section_1.html#//apple_ref/doc/uid/TP40006475-CH20-SW1">Getting Started</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_3.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_5.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Starting a Profiling Session</h2><p>When you double-click the OpenGL Profiler icon, the window shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW3" href="chapter_2_section_4.html#//apple_ref/doc/uid/TP40006475-CH20-SW3">Figure 1-1</a></span> opens. You use this window to set up a profiling session. You can start profiling an application either by launching it through OpenGL Profiler or by attaching the profiler to an application that’s already running. </p><br><div><a name="//apple_ref/doc/uid/TP40006475-CH20-SW3" title="Figure 1-1The main window in OpenGL Profiler" turn_anchor="yes"></a><p><b>Figure 1-1&nbsp;&nbsp;</b>The main window in OpenGL Profiler</p><img src = "../Art/launch_window.jpg" alt = "The main window in OpenGL Profiler" width="564" height="333"></div><br><p>Before you attach or launch your application, select Collect Trace. You also have the option to collect backtraces. After your application launches or attaches, you  may see small pauses or stutters in the application. This is normal behavior that  is due to the large amount of data that OpenGL Profiler writes out when collecting a trace. It does not significantly affect the performance statistics.</p>
+<!-- This template is being used for both PDF and HTML. -->
+
+    
+    <h4>In this section:</h4>
+    
+    
+    <p class="blockquote">
+    
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_11" href="chapter_2_section_4.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_11">Attaching to a Running Application</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_12" href="chapter_2_section_4.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_12">Launching an Application from OpenGL Profiler</a>
+				
+			<br>
+
+			
+        
+
+    </p><br>
+
+<a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_11" title="Attaching to a Running Application" turn_anchor="yes"></a><h3>Attaching to a Running Application</h3><p>To attach OpenGL Profiler to a running application:</p><ol class="ol"><li class="li"><p>Select “Attach to application.”</p></li><li class="li"><p>In the list that appears, select the application you want to profile.</p><br><div class="item_figure"><img src = "../Art/attaching_application.jpg" alt = "Choosing an application to attach to OpenGL Profiler." width="570" height="431"></div></li><li class="li"><p>Click Attach. </p><p>The status changes from idle to running, and the application list dims. Now that the profiler is attached to the application, you can perform any of the tasks described in the rest of this document. </p><p>OpenGL Profiler begins collecting data as soon as it attaches to your application. Data collection ends when you quit the application or click the Detach button in the OpenGL Profiler window. You can temporarily stop data collection by clicking Suspend.</p><p>Detaching lets the application continue to run, which is useful for applications (like shell tools) that do not have a user interface.</p></li></ol><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_12" title="Launching an Application from OpenGL Profiler" turn_anchor="yes"></a><h3>Launching an Application from OpenGL Profiler</h3><p>To set up OpenGL Profiler to launch an application:</p><ol class="ol"><li class="li"><p>Select “Launch application.”</p></li><li class="li"><p>Click the plus (+) button and navigate to the application you what to profile, then choose it.</p><p>You can add as many applications as you’d like, but you can profile only one at a time.</p></li><li class="li"><p>If your application needs launch arguments, click the Launch Arguments text field and add them.</p></li><li class="li"><p>Click the disclosure triangle to view the optional launch settings.</p><p>You can use these settings when you want to profile an application under specific conditions. For example, you can use a custom pixel format, simulate how the application would work using a specific graphics driver, and set additional environment variables. See <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW2" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-SW2">&#8220;Customizing Launch Settings&#8221;</a></span> for details.</p></li><li class="li"><p>Click Launch.</p><p>The status changes from idle to running, and the application and environment variables lists dim. </p><p>OpenGL Profiler begins collecting data as soon as it launches your application. Data collection ends when you quit the application or click the Kill button in the OpenGL Profiler window. You can temporarily stop data collection by clicking Suspend. </p></li></ol>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_3.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_5.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

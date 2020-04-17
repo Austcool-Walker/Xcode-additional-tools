@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Getting Started">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Getting Started</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH20" title="Getting Started" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="../Introduction/chapter_1_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_2.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <a name="//apple_ref/doc/uid/TP40006475-CH20-SW1" title="Getting Started" turn_anchor="no"></a><h1>Getting Started</h1><p>Users expect OpenGL applications to have fluid graphics that display without glitches. The more complex the graphics in an OpenGL application are, the more important it is for you to optimize performance and use resources wisely. When an OpenGL application performs less optimally than desired, the cause is often not obvious. That’s where the OpenGL Profiler can be of value to you. After installing the Mac OS X Developer Tools, you can find OpenGL Profiler in <code>/Developer/Applications/Graphics Tools</code>.</p><p>This chapter:</p><ul class="ul"><li class="li"><p>Gives an overview of how OpenGL Profiler works</p></li><li class="li"><p>Shows how to set up your computer to use the profiler</p></li><li class="li"><p>Describes how to start a profiling session for an OpenGL application</p></li><li class="li"><p>Explains how to view and interpret data collected by the profiler</p></li><li class="li"><p>Tells how to look at and modify application resources and parameters</p></li></ul><p>Before reading this chapter, you may want to read the “Improving Performance” chapter in <i><!--a logicalPath="//apple_ref/doc/uid/TP40001987" target="_top" -->OpenGL Programming Guide for Mac OS X<!--/a--></i>. That chapter provides a list of best programming practices for OpenGL and shows how to gather baseline data using a few Apple tools in addition to OpenGL Profiler, including Shark. In fact, prior to using OpenGL Profiler, it’s best to start your analysis with Shark. The results from Shark will help you determine how to focus your efforts with OpenGL Profiler, or whether you even need to use the profiler application. It may be that your application’s problems are not due to your OpenGL code!</p>
+<!-- This template is being used for both PDF and HTML. -->
+<!-- TopicBook.pm currently relies on the element name bmini_toc. -->
+
+    <h4>Contents:</h4>
+    
+    <p class="blockquote">
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_6" href="chapter_2_section_2.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_6">Overview</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_7" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_7">Before You Use OpenGL Profiler on a System</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_10" href="chapter_2_section_4.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_10">Starting a Profiling Session</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW2" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006475-CH20-SW2">Customizing Launch Settings</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_17" href="chapter_2_section_6.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_17">Viewing a Trace</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_18" href="chapter_2_section_7.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_18">Viewing Statistics</a>
+            
+        <br>
+
+        
+        
+            <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_19" href="chapter_2_section_8.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_19">Viewing Pixel Format Context Parameters</a>
+            
+        <br>
+
+        
+
+    </p><br>
+
+
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="../Introduction/chapter_1_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_2.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

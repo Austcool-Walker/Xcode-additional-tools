@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PopupType</key>
+	<dict>
+		<key>imageName</key>
+		<string>PopupButton.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<dict>
+				<key>Center</key>
+				<string>{{4, 0}, {53, 15}}</string>
+				<key>Left</key>
+				<string>{{0, 0}, {4, 15}}</string>
+				<key>Right</key>
+				<string>{{57, 0}, {10, 15}}</string>
+			</dict>
+			<key>Hilight</key>
+			<dict>
+				<key>Center</key>
+				<string>{{71, 0}, {53, 15}}</string>
+				<key>Left</key>
+				<string>{{67, 0}, {4, 15}}</string>
+				<key>Right</key>
+				<string>{{124, 0}, {10, 15}}</string>
+			</dict>
+			<key>InteriorMask</key>
+			<dict>
+				<key>Center</key>
+				<string>{{138, 0}, {53, 15}}</string>
+				<key>Left</key>
+				<string>{{134, 0}, {4, 15}}</string>
+				<key>Right</key>
+				<string>{{191, 0}, {10, 15}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+		<key>popupData</key>
+		<dict>
+			<key>arrowRect</key>
+			<string>{{57, 11}, {9, 8}}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

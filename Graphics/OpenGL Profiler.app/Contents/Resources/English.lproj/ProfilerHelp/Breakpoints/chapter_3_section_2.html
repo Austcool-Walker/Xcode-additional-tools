@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Setting Breakpoints on OpenGL Functions">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Setting Breakpoints on OpenGL Functions</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH30-DontLinkElementID_1" title="Setting Breakpoints on OpenGL Functions" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW1" href="chapter_3_section_1.html#//apple_ref/doc/uid/TP40006475-CH30-SW1">Using Breakpoints</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Setting Breakpoints on OpenGL Functions</h2><p>You set breakpoints in the Breakpoints window. To open this window, choose Views > Breakpoints. As shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW2" href="chapter_3_section_2.html#//apple_ref/doc/uid/TP40006475-CH30-SW2">Figure 2-1</a></span>, the left side of the window lists the OpenGL functions that you can set breakpoints on. This list includes functions defined by the OpenGL specification and the CGL calls available in Mac OS X. Keep in mind that AGL functions and Cocoa OpenGL class methods call into the CGL framework, so AGL and Cocoa methods aren’t explicitly on the function list.</p><p>The right side of the window lets you view the call stack, as shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW2" href="chapter_3_section_2.html#//apple_ref/doc/uid/TP40006475-CH30-SW2">Figure 2-1</a></span>, or OpenGL state variables, as shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW3" href="chapter_3_section_2.html#//apple_ref/doc/uid/TP40006475-CH30-SW3">Figure 2-2</a></span>.</p><br><div><a name="//apple_ref/doc/uid/TP40006475-CH30-SW2" title="Figure 2-1The Breakpoints window displaying the call stack" turn_anchor="yes"></a><p><b>Figure 2-1&nbsp;&nbsp;</b>The Breakpoints window displaying the call stack</p><img src = "../Art/breakpoints_call_stack.jpg" alt = "The Breakpoints window displaying the call stack" width="720" height="581"></div><br><p>To set a breakpoint, choose the OpenGL function in the function list that you want to set a breakpoint on. Then click one of the following columns:</p><ul class="ul"><li class="li"><p>Before pauses your application just before it executes the OpenGL function.</p></li><li class="li"><p>After pauses your application just after it executes the OpenGL function.</p></li></ul><p>A blue indicator appears wherever you set a breakpoint.</p><br><div><a name="//apple_ref/doc/uid/TP40006475-CH30-SW3" title="Figure 2-2The Breakpoints window displaying OpenGL state variables" turn_anchor="yes"></a><p><b>Figure 2-2&nbsp;&nbsp;</b>The Breakpoints window displaying OpenGL state variables</p><img src = "../Art/breakpoints_state.jpg" alt = "The Breakpoints window displaying OpenGL state variables" width="720" height="581"></div><br><p>The checkboxes below the function list let you set breakpoint conditions. You can also turn the function list breakpoints on and off quickly by selecting “Ignore all breakpoints.” </p>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

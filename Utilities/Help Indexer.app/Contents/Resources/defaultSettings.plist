@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TigerIndexing</key>
+	<true/>
+	<key>PantherIndexing</key>
+	<false/>
+	<key>GenerateSummaries</key>
+	<true/>
+	<key>ShowProgress</key>
+	<false/>
+	<key>RemoteRoot</key>
+	<string>http://www.example.com/</string>
+	<key>Tokenizer</key>
+	<integer>1</integer>
+	<key>UseRemoteRoot</key>
+	<false/>
+	<key>LogStyle</key>
+	<integer>1</integer>
+	<key>Stopwords</key>
+	<string></string>
+	<key>IndexAnchors</key>
+	<true/>
+	<key>MinTermLength</key>
+	<integer>3</integer>
+</dict>
+</plist>

@@ -1,0 +1,317 @@
+{
+    "MHC Bindings" = (
+        {
+            action = "selectTrackGroup:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1000; 
+            "command name" = "Select Track"; 
+            description = "Selects a specific track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "setMuteValue:"; 
+            "action id" = 5; 
+            "binding object" = 1; 
+            "command id" = 1001; 
+            "command name" = "Mute Track"; 
+            description = "Mutes a specific track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "setSoloValue:"; 
+            "action id" = 6; 
+            "binding object" = 1; 
+            "command id" = 1002; 
+            "command name" = "Solo Track"; 
+            description = "Solos a specific track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 7; 
+            "binding object" = 0; 
+            "command id" = 1003; 
+            "command name" = "Enable Record"; 
+            description = "Enables recording for a specific output track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "setPanAngleValue:"; 
+            "action id" = 2; 
+            "binding object" = 1; 
+            "command id" = 1004; 
+            "command name" = "Pan track"; 
+            description = "Pans the track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "setVolumeValue:"; 
+            "action id" = 1; 
+            "binding object" = 1; 
+            "command id" = 1005; 
+            "command name" = "Set Track Volume"; 
+            description = "Sets the output volume of a specific track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1010; 
+            "command name" = Record; 
+            description = "Starts recording on the transport"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1011; 
+            "command name" = "Rewind to Start"; 
+            description = "Rewinds the transport to the start"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1012; 
+            "command name" = Rewind; 
+            description = "Rewinds the Transport Position"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1013; 
+            "command name" = Play; 
+            description = "Plays the transport"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1014; 
+            "command name" = "Fast Forward"; 
+            description = "Advances the transport position"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1015; 
+            "command name" = Cycle; 
+            description = "Sets the transport to cycle (loop) mode"; 
+            "target type" = 3; 
+        }, 
+        {
+            action = selectNextGroup; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1020; 
+            "command name" = "Track Up"; 
+            description = "Activates the next track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = selectPreviousTrackGroup; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1021; 
+            "command name" = "Track Down"; 
+            description = "Selects the previous track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 1; 
+            "binding object" = 0; 
+            "command id" = 1006; 
+            "command name" = "Master Volume"; 
+            description = "Changes the master output volume"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = ""; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 1030; 
+            "command name" = "Track Info"; 
+            description = "Shows the info for the currently selected track"; 
+            "target type" = 2; 
+        }, 
+        {
+            action = selectNextGroup; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 10; 
+            "command name" = "Select Next Track"; 
+            description = "Selects the next track"; 
+            "key code" = 48; 
+            "key group" = 0; 
+            modifiers = 0; 
+            param = 0; 
+            "target type" = 2; 
+        }, 
+        {
+            action = selectPreviousGroup; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 11; 
+            "command name" = "Select Previous Track"; 
+            description = "Selects the Previous Track"; 
+            "key code" = 48; 
+            "key group" = 0; 
+            modifiers = 131072; 
+            param = 0; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "selectTrackGroup:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 101; 
+            "command name" = "Select First Track"; 
+            description = "Select the first track in the active document"; 
+            "key code" = 18; 
+            "key group" = 0; 
+            modifiers = 1048576; 
+            param = 0; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "selectTrackGroup:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 102; 
+            "command name" = "Select Second Track"; 
+            description = "Select the second track in the active document"; 
+            "key code" = 19; 
+            "key group" = 0; 
+            modifiers = 1048576; 
+            param = 1; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "selectTrackGroup:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 103; 
+            "command name" = "Select Third Track"; 
+            description = "Selects the third track in the document"; 
+            "key code" = 20; 
+            "key group" = 0; 
+            modifiers = 1048576; 
+            param = 2; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "selectTrackGroup:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 104; 
+            "command name" = "Select Fourth Track"; 
+            description = "Selects the fourth track in the document"; 
+            "key code" = 21; 
+            "key group" = 0; 
+            modifiers = 1048576; 
+            param = 3; 
+            "target type" = 2; 
+        }, 
+        {
+            action = selectNone; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 105; 
+            "command name" = "Select None"; 
+            description = "Deselects the selected track in the active document"; 
+            "key code" = 2; 
+            "key group" = 0; 
+            modifiers = 1048576; 
+            param = 0; 
+            "target type" = 2; 
+        }, 
+        {
+            action = "toggleEngineState:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 20; 
+            "command name" = "Toggle Engine State"; 
+            description = "Toggles the engine state of the active document"; 
+            "key code" = 44; 
+            "key group" = 1; 
+            modifiers = 1179648; 
+            param = 0; 
+            "target type" = 1; 
+        }, 
+        {
+            action = startSession; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 21; 
+            "command name" = "Start Engine"; 
+            description = "Starts the engine if stopped"; 
+            "key code" = 43; 
+            "key group" = 1; 
+            modifiers = 1179648; 
+            param = 0; 
+            "target type" = 1; 
+        }, 
+        {
+            action = stopSession; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 22; 
+            "command name" = "Stop Engine"; 
+            description = "Stops the engine of the active document"; 
+            "key code" = 47; 
+            "key group" = 1; 
+            modifiers = 1179648; 
+            param = 0; 
+            "target type" = 1; 
+        }, 
+        {
+            action = "hideMessage:"; 
+            "action id" = 0; 
+            "binding object" = 0; 
+            "command id" = 23; 
+            "command name" = "Clear Warning Messages"; 
+            description = ""; 
+            "key code" = 71; 
+            "key group" = 1; 
+            modifiers = 8388608; 
+            param = 0; 
+            "target type" = 1; 
+        },
+		{
+			action = "showNextWindow:";
+			"action id" = 0;
+			"binding object" = 0;
+			"command id" = 24;
+			"command name" = "Show next Window";
+			description = ""; 
+            "key code" = 124; 
+            "key group" = 0; 
+            modifiers = 11534336; 
+            param = 0; 
+            "target type" = 0; 
+		}, 
+		{
+			action = "showPreviousWindow:";
+			"action id" = 0;
+			"binding object" = 0;
+			"command id" = 24;
+			"command name" = "Show previous Window";
+			description = ""; 
+            "key code" = 123; 
+            "key group" = 0; 
+            modifiers = 11534336; 
+            param = 0; 
+            "target type" = 0; 
+		}
+    ); 
+}

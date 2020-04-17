@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AUSource</key>
+	<dict>
+		<key>imageName</key>
+		<string>AUSourceButton.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {21, 16}}</string>
+			<key>Hilight</key>
+			<string>{{21, 0}, {21, 16}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+	</dict>
+	<key>ChainSource</key>
+	<dict>
+		<key>imageName</key>
+		<string>ChainSourceButton.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {21, 16}}</string>
+			<key>Hilight</key>
+			<string>{{21, 0}, {21, 16}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+	</dict>
+	<key>MIDISource</key>
+	<dict>
+		<key>imageName</key>
+		<string>MIDISourceButton.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {21, 16}}</string>
+			<key>Hilight</key>
+			<string>{{21, 0}, {21, 16}}</string>
+		</dict>
+		<key>imageType</key>
+		<integer>3</integer>
+	</dict>
+</dict>
+</plist>

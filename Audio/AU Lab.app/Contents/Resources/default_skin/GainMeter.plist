@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HorizontalOrientation</key>
+	<dict>
+		<key>imageName</key>
+		<string>GainMeterHorizontal.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<dict>
+				<key>Center</key>
+				<string>{{2, 5}, {60, 5}</string>
+				<key>Left</key>
+				<string>{{0, 5}, {2, 5}}</string>
+				<key>Right</key>
+				<string>{{62, 5}, {2, 5}}</string>
+			</dict>
+			<key>Hilight</key>
+			<dict>
+				<key>Center</key>
+				<string>{{2, 0}, {60, 5}</string>
+				<key>Left</key>
+				<string>{{0, 0}, (2, 5}}</string>
+				<key>Right</key>
+				<string>{{62, 0}, {2, 5}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<integer>0</integer>
+	</dict>
+	<key>VerticalOrientation</key>
+	<dict>
+		<key>imageName</key>
+		<string>GainMeterVertical.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<dict>
+				<key>Bottom</key>
+				<string>{{0, 162}, {6, 2}}</string>
+				<key>Center</key>
+				<string>{{0, 2}, {6, 160}}</string>
+				<key>Top</key>
+				<string>{{0, 0}, {6, 2}}</string>
+			</dict>
+			<key>Hilight</key>
+			<dict>
+				<key>Bottom</key>
+				<string>{{6, 162}, {6, 2}}</string>
+				<key>Center</key>
+				<string>{{6, 2}, {6, 160}}</string>
+				<key>Top</key>
+				<string>{{6, 0}, {6, 2}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<integer>0</integer>
+		<key>meterData</key>
+		<dict>
+			<key>clipOffset</key>
+			<string>{12, 0}</string>
+			<key>clipRect</key>
+			<string>{{1, 1}, {4, 3}}</string>
+			<key>topLimit</key>
+			<integer>8</integer>
+			<key>label</key>
+			<dict>
+				<key>imageName</key>
+				<string>GainMeterVerticalLabel.png</string>
+				<key>imageParts</key>
+				<dict>
+					<key>Base</key>
+					<string>{{0, 0}, {10, 166}}</string>
+				</dict>
+				<key>imageType</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

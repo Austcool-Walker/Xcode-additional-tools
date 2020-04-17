@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- See http://quartzcomposer.apple.com/wiki/index.php/Composition_Metadata for full reference -->
+<dict>
+	<key>public</key>
+	<array>
+		<string>copyright</string>
+		<string>description</string>
+		<string>name</string>
+	</array>
+	
+	<key>private</key>
+	<array>
+		
+		<!-- System metadata -->
+		<string>thumbnailData</string>
+		<string>frameworkVersion</string>
+		<string>aspectRatio</string>
+		<string>fixedSize</string>
+		<string>excludedHosts</string>
+		<string>exclusiveHosts</string>
+		<string>protocols</string>
+		<string>category</string>
+		<string>applePrivate</string>
+		<string>virtualPatch</string>
+		<string>virtualPatches</string>
+
+		<!-- Editor metadata -->
+		<string>editorViewerWindow</string>
+		<string>editorViewerForceClear</string>
+
+		<!-- Template metadata -->
+		<string>templateName</string>
+		<string>templatePath</string>
+
+		<!-- Screen Saver metadata -->
+		<string>saverMainScreenOnly</string>
+		<string>saverMaxFrameRate</string>
+		<string>saverNoOptions</string>
+		<string>saverNoDepthBuffer</string>
+		<string>saverNoGammaFade</string>
+
+		<!-- Photo Booth / iChat metadata -->
+		<string>masterParameterKey</string>
+		
+	</array>
+</dict>
+</plist>

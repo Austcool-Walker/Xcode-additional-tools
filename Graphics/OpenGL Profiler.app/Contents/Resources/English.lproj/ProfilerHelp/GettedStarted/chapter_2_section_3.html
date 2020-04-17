@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Before You Use OpenGL Profiler on a System">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Before You Use OpenGL Profiler on a System</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_7" title="Before You Use OpenGL Profiler on a System" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-SW1" href="chapter_2_section_1.html#//apple_ref/doc/uid/TP40006475-CH20-SW1">Getting Started</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Before You Use OpenGL Profiler on a System</h2><p>If you’ve never used OpenGL Profiler on your system, if you want to allow the profiler to attach to a running application you must set the environment variable <code>GL_ENABLE_DEBUG_ATTACH</code>. You also might want to set preferences.</p>
+<!-- This template is being used for both PDF and HTML. -->
+
+    
+    <h4>In this section:</h4>
+    
+    
+    <p class="blockquote">
+    
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_8" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_8">Setting Up the Environment Variables</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_9" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_9">Setting Preferences (Optional)</a>
+				
+			<br>
+
+			
+        
+
+    </p><br>
+
+<a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_8" title="Setting Up the Environment Variables" turn_anchor="yes"></a><h3>Setting Up the Environment Variables</h3><p>There are two locations that require the environment variable:</p><ul class="spaceabove"><li class="li"><p>Your shell startup file. The name of this file depends on the shell that you use:  <code>~/.login</code>, <code>~/.cshrc</code>, <code>~/.bashrc</code>, <code>~/.profile</code>, and so on. Add the following to the appropriate shell file:</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>setenv GL_ENABLE_DEBUG_ATTACH YES<span></span></pre></td></tr></table></div></li><li class="li"><p>The Mac OS X environment property list file (<code>~/.MacOSX/environment.plist</code>). The Finder uses this file to set the environment variable when it launches applications. Typically OpenGL Profiler creates this file for you the first time that you launch OpenGL Profiler on a system. The first time you launch the application you should see a dialog that asks whether you want to enable the Attach feature. Click Enable to have the property list file created for you.</p><p>You can skip the rest of this section unless, for some reason, the property list file is missing. If that’s the case, to use the Attach feature you’ll need to create a plain text file, name it <code>environment.plist</code>, and enter the following into the file:</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>&lt;?xml version="1.0" encoding="UTF-8"?><span></span></pre></td></tr><tr><td scope="row"><pre>&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><span></span></pre></td></tr><tr><td scope="row"><pre>&lt;plist version="1.0"><span></span></pre></td></tr><tr><td scope="row"><pre>&lt;dict><span></span></pre></td></tr><tr><td scope="row"><pre>        &lt;key>GL_ENABLE_DEBUG_ATTACH&lt;/key><span></span></pre></td></tr><tr><td scope="row"><pre>        &lt;string>YES&lt;/string><span></span></pre></td></tr><tr><td scope="row"><pre>&lt;/dict><span></span></pre></td></tr><tr><td scope="row"><pre>&lt;/plist><span></span></pre></td></tr></table></div><p>Copy the file to your <code>~/.MacOSX</code> directory. If the directory does not exist, open Terminal and create the directory from within your shell.</p></li></ul><a name="//apple_ref/doc/uid/TP40006475-CH20-DontLinkElementID_9" title="Setting Preferences (Optional)" turn_anchor="yes"></a><h3>Setting Preferences (Optional)</h3><p>You can view preferences by choosing OpenGL Profiler > Preferences. You can set the following:</p><ul class="spaceabove"><li class="li"><p>Frame rate meter interval, which allows you to change the frames-per-second readout from you application. If you need a finer grain of measurement and a more immediate result, you might want to increase this value.</p></li><li class="li"><p>The function sample interval in the statistics view</p></li><li class="li"><p>The number of slices to keep in the statistics view. You can limit the number of timing samples that OpenGL Profiler records.</p></li><li class="li"><p>Trace view font. You can set the font face and the font size.</p></li><li class="li"><p>Trace data file. You can change the file location and name.</p></li></ul><br><div><img src = "../Art/profiler_preferences.jpg" alt = "OpenGL Profiler Preferences" width="386" height="368"></div><br>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

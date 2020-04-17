@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HorizontalOrientation</key>
+	<dict>
+		<key>imageName</key>
+		<string>GainSliderHiDPI.pdf</string>
+		<key>imageParts</key>
+		<dict>
+			<key>InteriorMask</key>
+			<dict>
+				<key>Center</key>
+				<string>{{3, 0}, {49, 7}}</string>
+				<key>Left</key>
+				<string>{{0, 0}, {3, 7}}</string>
+				<key>Right</key>
+				<string>{{51, 0}, {3, 7}}</string>
+			</dict>
+			<key>OffState</key>
+			<dict>
+				<key>Center</key>
+				<string>{{3, 24}, {49, 7}}</string>
+				<key>Left</key>
+				<string>{{0, 24}, {3, 7}}</string>
+				<key>Right</key>
+				<string>{{51, 24}, {3, 7}}</string>
+			</dict>
+			<key>OffStateHi</key>
+			<dict>
+				<key>Center</key>
+				<string>{{3, 24}, {49, 7}}</string>
+				<key>Left</key>
+				<string>{{0, 24}, {3, 7}}</string>
+				<key>Right</key>
+				<string>{{51, 24}, {3, 7}}</string>
+			</dict>
+			<key>OnState</key>
+			<dict>
+				<key>Center</key>
+				<string>{{3, 16}, {49, 7}}</string>
+				<key>Left</key>
+				<string>{{0, 16}, {3, 7}}</string>
+				<key>Right</key>
+				<string>{{51, 16}, {3, 7}}</string>
+			</dict>
+			<key>OnStateHi</key>
+			<dict>
+				<key>Center</key>
+				<string>{{3, 8}, {49, 7}}</string>
+				<key>Left</key>
+				<string>{{0, 8}, {3, 7}}</string>
+				<key>Right</key>
+				<string>{{51, 8}, {3, 7}}</string>
+			</dict>
+		</dict>
+		<key>imageType</key>
+		<string>2</string>
+	</dict>
+</dict>
+</plist>

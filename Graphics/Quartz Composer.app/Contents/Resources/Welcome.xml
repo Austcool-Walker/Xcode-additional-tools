@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	Welcome to Quartz Composer
+	Created by .xX on 2008-07-13.
+	Copyright (c) 2008 Apple, Inc. All rights reserved.
+-->
+
+<panes>
+	<templates title="Templates">
+		<templates>
+			<template title="Basic Composition">
+				<description>
+A template that creates a basic composition which clears the screen every frame.</description>
+			</template>
+			<template title="Graphic Animation">
+				<description>
+A template for creating generic motion graphic compositions. These compositions have no required input or output values but are required to render to the screen. An example use for a Graphic Animation would be a background animation within Keynote.
+\n
+\nOptional Inputs:
+\n• Primary Color - Color value that represents the primary color used within the composition.
+\n• Secondary Color - Color value that represents a secondary color used within the composition.
+\n• X, Y - Number values representing the primary point of interest within the composition. These values are expressed within the Quartz Composer coordinate system.
+\n• Pace - Number value representing how quickly or dramatically the composition performs its animation.
+\n• Preview Mode - Boolean value representing if the composition is running in Preview mode.
+				</description>
+				<link>Graphic Animation Examples</link>
+			</template>
+			<template title="Graphic Transition">
+				<description>
+A template for creating compositions that transition from a source image to a destination image. This transition occurs for time in the [0,1] range. Concretely, this means that when the Patch Time equals zero the Source Image should be shown and when the Patch Time equals one the Destination Image should be shown.
+\n
+\nRequired Inputs:
+\n• Source Image - The first image to be shown.
+\n• Destination Image - The resulting image.
+\n
+\nOptional Inputs:
+\n• Preview Mode - Boolean value that indicates if the composition is running in 'Preview' mode.
+				</description>
+				<link>Graphic Transition Examples</link>
+			</template>
+			<template title="Image Filter">
+				<description>
+A template for creating compositions that apply visual effects to images. Image Filters will be available for use system wide (e.g. Photo Booth and iChat) if saved into the Composition Repository (~/Library/Compositions or /Library/Compositions). 
+\n
+\nRequired Inputs:
+\n• Input Image - The image to process.
+\n
+\nOptional Inputs:
+\n• X, Y - Number values representing the center point of the effect. These values are in the [0,1] range, where 0, 0 represents the bottom left corner of the image.
+\n• Preview Mode - Boolean value that indicates if the composition is running in Preview mode. As an example, Preview Mode is automatically set to true when browsing for effects in Photo Booth or iChat.
+\n
+\nRequired Outputs:
+\n• Output Image - The processed image.	  				
+				</description>
+				<link>Image Filter Examples</link>
+			</template>
+			<template title="Music Visualizer">
+				<description>
+A template for creating compositions that visualize music. Music Visualizers will be available for use system wide (e.g. iTunes) if saved into the Composition Repository (~/Library/Compositions or /Library/Compositions).
+\n
+\nRequired Inputs:
+\n• Audio Peak - A number representing the current audio peak.
+\n• Audio Spectrum - A structure of 16 number values, each representing the signal strength of a given frequency.
+\n
+\nOptional Inputs:
+\n• Track Signal - A boolean signal indicating when a track has changed by changing from false to true for a single frame and then back to false.
+\n• Track Info - A structure containing the current track information such as the track artist, album name, track name, and track duration.
+\n• Track Position - A number representing the current position in the track expressed in seconds.					
+				</description>
+				<link>Music Visualizer Examples</link>
+			</template>
+			<template title="RSS Visualizer">
+				<description>
+A template for creating compositions that parse and display RSS Feeds.
+\n
+\nRequired Inputs:
+\n• RSSFeed URL - A string representing the RSS Feed URL.
+\n
+\nOptional Inputs:
+\n• RSSArticle Duration - A number representing the duration to display each feed article.					
+				</description>
+				<link>RSS Visualizer Examples</link>
+			</template>
+			<template title="Screen Saver">
+				<description>
+A template for creating compositions that can be used as Screen Savers. Screen Savers will be available for use in the System Preferences if saved into ~/Library/Screen Savers or /Library/Screen Savers.
+\n
+\nOptional Inputs:
+\n• Screen Image - An image representing the contents of the screen at the start of the Screen Saver. If this image is used within a composition, the fade normally performed at the start of a Screen Saver does not occur. This allows seamless transitions to and from the Screen Saver composition.
+\n• Preview Mode - A Boolean value that indicates if the composition is running in Preview mode. Preview Mode is automatically set to true when viewing Screen Savers within the System Preferences.
+\n
+\nOptional Outputs:
+\n• Web Page URL - A string representing the webpage URL to open in the default web browser when the Screen Saver exits.
+				</description>
+				<link>Screen Saver Examples</link>
+			</template>
+		</templates>
+	</templates>
+	<tips title="Tips">
+		<categories>
+			<category title="General">
+				<entries>
+					<entry>
+						<title>Filing a bug with Apple</title>
+						<body>Apple hosts a public site known as Bug Reporter so you can submit bugs you find in Quartz Composer or any other Apple software.  If you find a bug please visit http://bugreport.apple.com and provide us with detailed instructions on how to reproduce the issue.  If you provide an example which illustrates the issue we ask that you take a few moments to reduce it to the simplest form possible which still shows the issue.</body>
+					</entry>
+					<entry>
+						<title>Filing a feature request with Apple</title>
+						<body>If you have an idea or a suggestion on how to make Quartz Composer better, you can file a feature request in the same way that you file a bug.  Go to http://bugreport.apple.com and help us make Quartz Composer even better.</body>
+					</entry>
+					<entry>
+						<title>Joining the Quartz Composer mailing list</title>
+						<body>The Quartz Composer mailing list provides a forum where users can assist one another with the use and application of Quartz Composer.</body>
+					</entry>
+				</entries>
+			</category>
+			<category title="Patch Tips">
+				<entries>
+					<entry>
+						<title>Logging with JavaScript</title>
+						<body>When programming a JavaScript patch, it is often useful to log a value or a message.  You can use the Log() function to log messages to standard output.  You can view these messages using the Console application found in /Applications/Utilities as well as in the log drawer of the Viewer when in Debug Mode.</body>
+					</entry>
+					<entry>
+						<title>Mathematical Expression vs. Math</title>
+						<body>For non-trivial mathematical expressions you can use the Mathematical Expression patch.  It allows you to directly type expressions such as a*(b+c) or sqrt(a).  The patch will dynamically create inputs for each variable you enter and will automatically set it's title to the expression you type.  You can set your own title by double clicking the existing title and entering a new one.  To revert back to a dynamic title, set the title to "" and then adjust the expression.  For a full list of supported constants and functions please refer to the patch description.  As an example, you can use the ternary operator to branch within your expressions: a > b ? c : d.</body>
+					</entry>
+					<entry>
+						<title>Creating drop down lists with the Input Splitter</title>
+						<body>You can easily create a drop down list for use in Quartz Composer by creating an Input Splitter and setting its type to Index and the mode to Labeled Indices.  You can also add spacers between elements in the list by setting an element's label to "-".</body>
+					</entry>
+					<entry>
+						<title>Programmable Patches and Immutable Objects</title>
+						<body>In order to ensure data integrity as well as allow for optimizations such as caching, objects in Quartz Composer are considered immutable.  Concretely, this means that from within programmable patches such as the Core Image Filter, OpenCL kernel and JavaScript patches, you cannot modify the inputs or reliably read the outputs of the patch.  If you would like to access the output values for the previous frame you should use the Feedback patch.</body>
+					</entry>
+					<entry>
+						<title>JavaScript and OpenCL</title>
+						<body>When using JavaScript to supply data to an OpenCL kernel it is important that the data types of array elements match those which are expected by the OpenCL kernel.  For example, if your kernel expects an array of floats (__global const float *data) you may need to force your data elements to be floats in JavaScript using the function parseFloat().</body>
+					</entry>
+				</entries>
+			</category>	
+			<category title="Workflow">
+				<entries>
+					<entry>
+						<title>Connecting an output port to multiple input ports</title>
+						<body>Click on an output port to create a patch cord, but hold down the option key while clicking on an an input port to create the connection while allowing another connection to be made.</body>
+					</entry>
+					<entry>
+						<title>Grabbing a copy of a connected patch cable</title>
+						<body>You can grab a copy of a connected patch cable by holding down the option key while clicking and dragging away from a connected output port.</body>
+					</entry>
+					<entry>
+						<title>Add notes to document your composition</title>
+						<body>Notes can be added to the workspace by control clicking on the workspace and selecting "Add Note".  Once added, you can change the color of a note by control clicking on the note and choosing "Set Color".</body>
+					</entry>
+					<entry>
+						<title>Sticky settings windows</title>
+						<body>You can open up a settings window which is always on top and which remains open by selecting a patch and in the Editor menu selecting "Show Patch Settings".  This is very useful when editing code or using the Timelines patch.  Multiple settings windows can be open at any time and you can even Cmd-Double Click a patch to open a sticky settings window as a shortcut.</body>
+					</entry>
+					<entry>
+						<title>Interactive Placement</title>
+						<body>You can easily layout your compositions by changing the Rendering Mode to Interactive and simply dragging objects to place them.  The Interactive Rendering Mode can be found at the top of the Viewer Window.  If you would like to lock an object's position you can insert Input Splitters into the X and Y Position inputs.</body>
+					</entry>
+					<entry>
+						<title>Using the Patch Inspector</title>
+						<body>You can quickly open and switch between panels of the Patch Inspector by using the keyboard shortcuts Cmd-1, Cmd-2 and Cmd-3 to open the first, second and third panels respectively.</body>
+					</entry>
+					<entry>
+						<title>Dragging a filepath from the Finder</title>
+						<body>You can quickly set a filepath on a port by dragging a file from the Finder onto the port's textfield.  This can be a textfield within the patch inspector as well as the textfield which is shown when double clicking a port in the workspace.</body>
+					</entry>
+				</entries>
+			</category>
+			<category title="Optimization">
+				<entries>
+					<entry>
+						<title>Setting the type of a patch</title>
+						<body>Certain patches, such as the Input Splitter, are created by default with their data type set to "Virtual".  This allows a patch to accept any data type and return that same type.  Although being "Virtual" is flexible, it is not always optimal and can result in unneeded data conversions.  These conversions occur when a port of a given type is connected to a port of a different type and is indicated by an orange patch cord.</body>
+					</entry>
+					<entry>
+						<title>Optimizing for different hardware</title>
+						<body>When creating a composition which will be deployed on different hardware configurations it may be advantageous to adapt the composition to the current configuration.  The current configuration can be determined using the OpenGL Info patch.  As an example, you could use the "Core Image Accelerated" output port of the OpenGL Info patch to determine if you should use a Core Image based Gaussian Blur or a downsampled Render In Image to perform a blur.  As another example, you could also determine if you are running on an embedded system architecture such as the Intel GMA 950 by testing (!GL_APPLE_float_pixels) AND GL_ARB_fragment_program.</body>
+					</entry>
+					<entry>
+						<title>Process only the pixels you need with Core Image</title>
+						<body>Although Core Image will only process the pixels which it needs to produce an image, there are circumstances where pixels are processed unnecessarily.  You should resize images to the size which they will be drawn on screen to avoid unnecessary computation.  You can determine the size of the images being processed by hovering your mouse over individual image ports.</body>
+					</entry>
+					<entry>
+						<title>Conserve VRAM</title>
+						<body>Using more VRAM than is available will result in memory paging and resulting performance loss.  You can control the amount of VRAM used by resizing images to the smallest acceptable size which should not exceed the size which they will be drawn on screen.  You can monitor your VRAM usage through the OpenGL Driver Monitor found online at developer.apple.com/.  Open the application, Choose Monitors: Driver Monitors and select your Graphics Card.  Set the Log/Linear pulldown to Linear and add the Current Free Video Memory parameter by pressing the Parameters button and double clicking it in the list.</body>
+					</entry>
+					<entry>
+						<title>Image Texturing Properties</title>
+						<body>The Image Texturing Properties patch can be used to control how a texture appears on a surface.  It can be used to render a portion of an image on a surface, similar to the Core Image Crop patch, as well as control the use of Mipmapping to reduce artifacts when scaling.  Note that Mipmapping may not be available on all graphics hardware.</body>
+					</entry>
+				</entries>
+			</category>
+		</categories>
+	</tips>
+	<getting_started title="Getting Started">
+		<description>Quartz Composer allows for the creation of parametrizable motion graphics compositions without needing to write code. It also allows for exploration of many of the technologies available in Mac OS X, like OpenGL, OpenCL and Core Image, without needing to learn their application programming interfaces (API). Compositions created with Quartz Composer can be used as PhotoBooth/iChat effects, Screen Savers, iTunes Music Visualizers and QuickTime movies among others.  Compositions can also be played back and controlled easily in your applications using the Interface Builder palette, Cocoa bindings or lower-level API.
+		</description>
+	</getting_started>
+</panes>

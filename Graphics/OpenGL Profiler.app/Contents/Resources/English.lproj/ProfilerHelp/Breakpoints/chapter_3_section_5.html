@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Creating and Attaching Scripts to a Breakpoint">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Creating and Attaching Scripts to a Breakpoint</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH30-DontLinkElementID_4" title="Creating and Attaching Scripts to a Breakpoint" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH30-SW1" href="chapter_3_section_1.html#//apple_ref/doc/uid/TP40006475-CH30-SW1">Using Breakpoints</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_4.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_6.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Creating and Attaching Scripts to a Breakpoint</h2><p>OpenGL Profiler allows you to execute (at a performance cost) small amounts of OpenGL code or other scripting calls when your application pauses at a breakpoint.  A script is a text file that contains OpenGL function calls. For example, a script can be as simple as the following line of code:</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>glClear(1.0, 0.0, 0.0, 1.0);<span></span></pre></td></tr></table></div><p>Or it can be more complex, containing many lines of code, such as:</p><div class="codesample"><table cellspacing="0" cellpadding="6" width="100%" bgcolor="#F1F5F9" style="border: 1px solid #C9D1D7;"><tr><td scope="row"><pre>glBegin(GL_POINTS);<span></span></pre></td></tr><tr><td scope="row"><pre>glVertex3f(0,0,1);<span></span></pre></td></tr><tr><td scope="row"><pre>glVertex3f(1,0,1);<span></span></pre></td></tr><tr><td scope="row"><pre>glVertex3f(1,1,1);<span></span></pre></td></tr><tr><td scope="row"><pre>glVertex3f(0,1,1);<span></span></pre></td></tr><tr><td scope="row"><pre>glEnd();<span></span></pre></td></tr></table></div><p>You can create a script using any text editor, or you can enter a script directly into the Scripts window.</p><p>To add a script:</p><ol class="ol"><li class="li"><p>Choose Views > Scripts to open the Scripts window.</p><br><div class="item_figure"><img src = "../Art/scripts_window.jpg" alt = "The Scripts window." width="569" height="555"></div></li><li class="li"><p>If you created the script in a text editor, click Open, navigate to the script, and choose it. If you want to create a script in the Scripts window, click the plus (+) button, enter a script name, then type commands in the text window on the right.</p><p>Any script that you add in the Scripts window will be available from the Breakpoints window.</p></li></ol><p>After you add a script  to OpenGL Profiler, you can either execute it manually or attach it to a breakpoint.</p><p>To execute a script manually when your application pauses at a breakpoint:</p><ol class="ol"><li class="li"><p>Choose a script in the Scripts window.</p></li><li class="li"><p>Click Execute. </p><p>OpenGL Profiler sends the commands to your application for execution. Errors in your script appear in the pane located in the lower left of the Scripts window.</p></li></ol><p>To attach a script to a breakpoint:</p><ol class="ol"><li class="li"><p>Open the Breakpoints window.</p></li><li class="li"><p>Choose Actions > Attach Script.</p></li><li class="li"><p>In the sheet that appears, choose a script.</p></li><li class="li"><p>Select one or more execution options. </p><p>You can choose to have OpenGL Profiler execute the script  before, after, or both before and after the OpenGL function. You can also choose to have your application continue after executing the script.</p></li><li class="li"><p>Click Attach.</p><p>A small document icon appears in the functions list next to the blue breakpoint indicator for the function.</p></li></ol><div class="notebox"><a name="//apple_ref/doc/uid/TP40006475-CH30-DontLinkElementID_29" title="Note" turn_anchor="yes"></a><p><b>Note:</b>&nbsp;Attaching a script to a function that your application uses repeatedly is an expensive operation. Data that you look at when the script executes is not an accurate measure of performance. </p><p></p></div><p>To remove a script from a breakpoint, choose Actions > Remove Script.</p>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_3_section_4.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_3_section_6.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

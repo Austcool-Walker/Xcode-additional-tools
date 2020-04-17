@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Groove</key>
+	<dict>
+		<key>imageName</key>
+		<string>SliderGroove.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {13, 164}}</string>
+			<key>Hilight</key>
+			<string>{{13, 0}, {13, 164}}</string>
+			<key>InteriorMask</key>
+			<string>{{26, 0}}, {13, 164}}</string>
+		</dict>
+		<key>imageType</key>
+		<string>3</string>
+	</dict>
+	<key>Knob</key>
+	<dict>
+		<key>imageName</key>
+		<string>SliderKnob.png</string>
+		<key>imageParts</key>
+		<dict>
+			<key>Base</key>
+			<string>{{0, 0}, {14, 23}}</string>
+			<key>Hilight</key>
+			<string>{{14, 0}, {14, 23}}</string>
+			<key>InteriorMask</key>
+			<string>{{28, 0}, {14, 23}}</string>
+		</dict>
+		<key>imageType</key>
+		<string>3</string>
+		<key>sliderData</key>
+		<dict>
+			<key>center</key>
+			<string>{10, 9}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

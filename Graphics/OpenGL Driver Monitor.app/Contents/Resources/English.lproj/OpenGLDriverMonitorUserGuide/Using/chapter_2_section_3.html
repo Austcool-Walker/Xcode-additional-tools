@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Collecting and Viewing Data">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Driver Monitor User Guide: Collecting and Viewing Data</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_10" title="Collecting and Viewing Data" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006474-CH1-DontLinkElementID_16">OpenGL Driver Monitor User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW5" href="chapter_2_section_1.html#//apple_ref/doc/uid/TP40006474-CH2-SW5">Using OpenGL Driver Monitor</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Collecting and Viewing Data</h2><p>OpenGL Driver Monitor lets you collect system-wide data for a specific OpenGL driver. You can collect data for the system that you are running the driver monitor on or a system that you already set up for remote monitoring. (See <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW4" href="chapter_2_section_5.html#//apple_ref/doc/uid/TP40006474-CH2-SW4">&#8220;Monitoring an OpenGL Driver Remotely.&#8221;</a></span>) The next few sections show how to collect the data.</p><p>After OpenGL Driver Monitor launches, choose a driver to investigate from the Monitors > Driver Monitors menu. Most systems have only one driver, but if your system has more than one graphics card installed, you’ll see more than one entry. After choosing a driver, the driver window opens with a view of an empty graph. You’ll notice that the  Driver Monitor Parameters list below the graph is empty.</p><p>Click Parameters to open a drawer that lists all the driver parameters that you can monitor. Hover the pointer over a parameter name to see its description. See also <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH4-SW57" href="../Glossary/chapter_4_section_1.html#//apple_ref/doc/uid/TP40006474-CH4-SW57">&#8220;OpenGL Driver Monitor Parameters&#8221;</a></span> for definitions of the parameter names and for cross-references between the symbolic name and the descriptive name for a parameter.</p><p>Either double-click each of the parameters (shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW7" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-SW7">Figure 1-1</a></span>) you want to monitor, or drag them to the Driver Monitor Parameters list below the graph. As you might expect, not all parameters are equally useful for every scenario. You’ll need to choose accordingly.</p><p>Keep in mind that the parameters shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW7" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-SW7">Figure 1-1</a></span> are for a particular driver. Not all drivers support the same parameters, so it’s possible that the list you see doesn’t match either what’s shown in the figure or what’s listed in the glossary. </p><p>You’ll notice that when you see similarly named parameters, one of them is typically a “super parameter.” The value of a super parameter includes the values of all its “child parameters.” For example, the super parameter <code>commandBytes</code> (Total Command Data) includes all quantities represented by the similarly named parameters <code>command2DBytes</code> (2D Command Data), <code>commandGLBytes</code> (OpenGL Command Data), and <code>commandDVDBytes</code> (DVD Command Data). </p><br><div><a name="//apple_ref/doc/uid/TP40006474-CH2-SW7" title="Figure 1-1The parameters drawer" turn_anchor="yes"></a><p><b>Figure 1-1&nbsp;&nbsp;</b>The parameters drawer</p><img src = "../Art/ParametersDrawer.jpg" alt = "The parameters drawer" width="308" height="631"></div><br>
+<!-- This template is being used for both PDF and HTML. -->
+
+    
+    <h4>In this section:</h4>
+    
+    
+    <p class="blockquote">
+    
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_11" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_11">Viewing Graphed Data</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_12" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_12">Viewing Tabular Data</a>
+				
+			<br>
+
+			
+        
+			
+			
+				<a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_13" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_13">Enabling and Disabling Parameters</a>
+				
+			<br>
+
+			
+        
+
+    </p><br>
+
+<a name="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_11" title="Viewing Graphed Data" turn_anchor="yes"></a><h3>Viewing Graphed Data</h3><p>After you choose a parameter, OpenGL Driver Monitor adds it to the Driver Monitor Parameter list and starts to display data on the graph and in the columns next to the parameter name. <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW1" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-SW1">Figure 1-2</a></span> shows the driver monitor graph window after displaying two parameters—CPU Wait for CPU and Current Free Video Memory. If you prefer to use colors other than the default ones for graphing the values, click the color well for a parameter and choose another from the color panel that appears.</p><br><div><a name="//apple_ref/doc/uid/TP40006474-CH2-SW1" title="Figure 1-2The driver monitor graph window" turn_anchor="yes"></a><p><b>Figure 1-2&nbsp;&nbsp;</b>The driver monitor graph window</p><img src = "../Art/DriverWindowGraphDataLinear.jpg" alt = "The driver monitor graph window" width="580" height="716"></div><br><p>The y-axis values on the left side of the graph are values that represent different units depending on the parameter. The y-axis values on the right side represent percentages. Keep the following in mind when reading the graph:</p><ul class="spaceabove"><li class="li"><p>Time-based parameters values represent nanoseconds. For example, 1 giga-nanosecond (or 1G, as shown on the graph) represents about 1 second spent on an operation. If the sampling interval is 1 second, then the percentage is 100%.</p></li><li class="li"><p>Parameters that represent counts are absolute numbers, with quantities measured once per sampling interval. Counts are not affected by the length of the sampling interval, but may vary during the interval.</p></li></ul><p>You can adjust the scale of the x-axis and the base (log or linear) of the y-axis to help you see changes in the values.</p><a name="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_12" title="Viewing Tabular Data" turn_anchor="yes"></a><h3>Viewing Tabular Data</h3><p>You can view the data in tabular format if you prefer. This lets you compare running values among the parameters you are monitoring, as shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW3" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-SW3">Figure 1-3</a></span>.</p><br><div><a name="//apple_ref/doc/uid/TP40006474-CH2-SW3" title="Figure 1-3The driver monitor table window" turn_anchor="yes"></a><p><b>Figure 1-3&nbsp;&nbsp;</b>The driver monitor table window</p><img src = "../Art/DriverWindowTableData.jpg" alt = "The driver monitor table window" width="580" height="716"></div><br><a name="//apple_ref/doc/uid/TP40006474-CH2-DontLinkElementID_13" title="Enabling and Disabling Parameters" turn_anchor="yes"></a><h3>Enabling and Disabling Parameters</h3><p>You enable and disable the driver monitor parameters that you are monitoring by using the Action pop-up menu shown in <span class="content_text"><a logicalPath="//apple_ref/doc/uid/TP40006474-CH2-SW8" href="chapter_2_section_3.html#//apple_ref/doc/uid/TP40006474-CH2-SW8">Figure 1-4</a></span>. You can also click the Show column to show or hide data for a particular parameter. </p><br><div><a name="//apple_ref/doc/uid/TP40006474-CH2-SW8" title="Figure 1-4The Action pop-up menu" turn_anchor="yes"></a><p><b>Figure 1-4&nbsp;&nbsp;</b>The Action pop-up menu</p><img src = "../Art/ActionPopUp.jpg" alt = "The Action pop-up menu" width="161" height="134"></div><br>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_2_section_2.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_2_section_4.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>

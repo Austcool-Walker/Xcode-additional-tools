@@ -1,0 +1,15 @@
+! OldScript (inside of OldScript.ccl)
+
+! implicitly overrides OldScript
+! If OldScript.ccl and OldScript are installed, Other/OldScript won't show
+! in the UI.  Replacement Example also overrides OldScript using the explicit
+! Supersedes property.  There are two ways to supersede an old script:
+! explicitly via the Superseds key in the personality and implicity by
+! having the same basename for the containing bundle.
+
+@ORIGINATE
+@ANSWER
+@HANGUP
+Note "bundled OldScript running out of OldScript.ccl" 3
+
+Exit -6028

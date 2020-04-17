@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>new-patch</key>
+	<dict>
+		<key>displayName</key>
+		<string>New Patch</string>
+		<key>errorLevel</key>
+		<integer>2</integer>
+	</dict>
+	<key>backwards-incompatible</key>
+	<dict>
+		<key>displayName</key>
+		<string>Backwards Incompatible</string>
+		<key>errorLevel</key>
+		<integer>2</integer>
+	</dict>
+	<key>added-ports</key>
+	<dict>
+		<key>displayName</key>
+		<string>Added Ports</string>
+		<key>errorLevel</key>
+		<integer>1</integer>
+	</dict>
+	<key>removed-ports</key>
+	<dict>
+		<key>displayName</key>
+		<string>Removed Ports</string>
+		<key>errorLevel</key>
+		<integer>0</integer>
+	</dict>
+	<key>changed-keys</key>
+	<dict>
+		<key>displayName</key>
+		<string>Changed Keys</string>
+		<key>errorLevel</key>
+		<integer>2</integer>
+	</dict>
+	<key>added-settings</key>
+	<dict>
+		<key>displayName</key>
+		<string>Added Settings</string>
+		<key>errorLevel</key>
+		<integer>1</integer>
+	</dict>
+	<key>removed-settings</key>
+	<dict>
+		<key>displayName</key>
+		<string>Removed Settings</string>
+		<key>errorLevel</key>
+		<integer>0</integer>
+	</dict>
+	<key>changed-behavior</key>
+	<dict>
+		<key>displayName</key>
+		<string>Changed Behavior</string>
+		<key>errorLevel</key>
+		<integer>1</integer>
+	</dict>
+	<key>changed-UI</key>
+	<dict>
+		<key>displayName</key>
+		<string>Changed UI</string>
+		<key>errorLevel</key>
+		<integer>0</integer>
+	</dict>
+	<key>deprecated-patch</key>
+	<dict>
+		<key>displayName</key>
+		<string>Deprecated Patch</string>
+		<key>errorLevel</key>
+		<integer>1</integer>
+	</dict>
+	<key>removed-patch</key>
+	<dict>
+		<key>displayName</key>
+		<string>Removed Patch</string>
+		<key>errorLevel</key>
+		<integer>2</integer>
+	</dict>
+	<key>hardware-acceleration</key>
+	<dict>
+		<key>displayName</key>
+		<string>Patch Benefits From Hardware Acceleration</string>
+		<key>errorLevel</key>
+		<integer>0</integer>
+	</dict>
+	<key>private</key>
+	<dict>
+		<key>displayName</key>
+		<string>Private</string>
+		<key>errorLevel</key>
+		<integer>0</integer>
+	</dict>
+	<key>third-party</key>
+	<dict>
+		<key>displayName</key>
+		<string>Third Party</string>
+		<key>errorLevel</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <META NAME="Generator" CONTENT="Gutenberg">
+		<META NAME="GeneratorVersion" CONTENT="v129">
+        <META http-equiv="content-type" CONTENT="text/html;charset=utf-8">
+        <META NAME = "Copyright" CONTENT="Copyright 2007 Apple Inc. All Rights Reserved.">
+        <META NAME="IndexTitle" CONTENT="Making Sure You Use Functions Correctly">
+        <meta name="xcode-display" content="render">
+        
+        <TITLE>OpenGL Profiler User Guide: Making Sure You Use Functions Correctly</TITLE>
+		
+        <!-- if in a frameset, set base target -->		
+        <script type="text/javascript" language="JavaScript"><!--
+        if (self != top) { document.write('<base target="content">'); }
+        //--></script>
+
+        <LINK REL="stylesheet" TYPE="text/css" HREF="../Resources/CSS/frameset_styles.css">
+        <script type="text/javascript" language="JavaScript" src="../Resources/JavaScript/page.js"></script>
+    </head>
+    
+    <BODY bgcolor="#ffffff" onload="initialize_page();"><a name="//apple_ref/doc/uid/TP40006475-CH40-SW3" title="Making Sure You Use Functions Correctly" turn_anchor="yes"></a>
+        <a name="top"></a>
+        <!-- start of header -->
+        <!--#include virtual="/includes/framesetheader" -->
+        <!-- end of header -->
+        
+        <!-- start of path -->
+<div class="breadcrumb"><a href="http://developer.apple.com/" target="_top">ADC Home</a> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000943"  -->Reference Library<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440"  -->Guides<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424"  -->Graphics &amp; Imaging<!--/a--> &gt; <!--a logicalPath="//apple_ref/doc/uid/TP30000440-TP30000424-TP30000549"  -->OpenGL<!--/a--> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31" href="../Introduction/chapter_1_section_1.html#//apple_ref/doc/uid/TP40006475-CH1-DontLinkElementID_31">OpenGL Profiler User Guide</a> &gt; <a logicalPath="//apple_ref/doc/uid/TP40006475-CH40-SW1" href="chapter_4_section_1.html#//apple_ref/doc/uid/TP40006475-CH40-SW1">Identifying and Solving Performance Issues</a> &gt; </div><br>
+<!-- end of path -->
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+  
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+        
+        <hr>
+        
+		<!-- legacyStatement -->
+        <h2>Making Sure You Use Functions Correctly</h2><p>OpenGL is an evolving specification. As time goes on, programming practices that were acceptable in the past are replaced by techniques that work much better. There are several functions in the OpenGL specification that you should watch for when you profile your application. If you are using any of these OpenGL functions in your application, make sure that you really need to use them, and that you are using them correctly.</p><ul class="ul"><li class="li"><p>Avoid <code>glBegin</code>  because it signals that you are using immediate mode. Unless you are drawing a simple shape or creating a small prototype, immediate mode is typically not an optimal technique for using OpenGL. </p></li><li class="li"><p><code>glFinish</code> forces your application to wait until all OpenGL commands in the pipeline have executed on the graphics card. </p></li><li class="li"><p><code>glFlush</code> is typically not needed because flushing is usually handled by other calls, such as <code>CGLFlushDrawable</code>. The function <code>glFlush</code> flushes at the macro level, an expensive operation. Flushing calls provided by the Mac OS X interfaces (AGL, CGL, Cocoa OpenGL classes) act  at a microlevel to give finer control over flushing and, as a result, much better performance. </p></li><li class="li"><p><code>glTexImage</code> and related calls. Check to see if you are using this function to redefine the texture each frame. If so, change your code to define the texture outside frame rendering. If your data changes, you can instead use a data replacement technique, such as pixel buffer objects, or call <code>glTexSubImage</code> to specify the image again. Keep in mind that you can call <code>glTexSubImage</code> to specify the entire image again (maintaining the current texture parameters), and it will be a less expensive call than <code>glTexImage</code>. You should call <code>glTexImage</code> only if you must specify a larger image.</p></li><li class="li"><p>Any form of <code>glGet</code> or <code>glIs</code>. Getting state values slows your application. Unless your application is a “middle ware” application, you shouldn’t need to retrieve state values. During development, however, it’s quite common to call <code>glGetError</code>. When your application is ready to go into production, make sure that your remove <code>glGetError</code> calls and any other state getting and checking functions. As an alternative during development, you can look for errors by setting OpenGL Profiler to break on errors.</p></li><li class="li"><p><code>glPushAttrib</code> or  <code>glPopAttrib</code>. You should keep track of OpenGL state instead of using the server attribute stack.</p></li><li class="li"><p>The function <code>glDrawPixels</code> is a convenience function that, under the hood, uses screen-aligned textured quads. If you use screen-aligned textured quads directly, you’ll save the overhead of calling <code>glDrawPixels</code>. Make sure that when you use textured quads that you also use appropriate texture filtering.</p></li><li class="li"><p>If you are calling <code>glReadPixels</code>, you should also be using pixel buffer objects.</p></li><li class="li"><p><code>glProgramLocalParameter</code> and <code>glProgramEnvParameter</code> calls. These calls, defined by the <span class="content_text"><a href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/vertex_program.txt" target="_blank">GL_ARB_vertex_program</a></span> extension, load only one parameter at a time. It’s more efficient to use <code>glProgramLocalParameters</code> and <code>glProgramEnvParameters</code>, defined by the <span class="content_text"><a href="http://opengl.org/registry/specs/EXT/gpu_program_parameters.txt" target="_blank">GL_EXT_gpu_program_parameters</a></span> extension, which loads multiple parameters. </p></li></ul>
+
+        <br><br> 
+        
+        <table width="100%" cellpadding=0 cellspacing=0 border=0 class="mini_nav_text"><tr>
+        <td align=left scope="row">
+
+        <!-- insert Show/Hide frames -->
+        <script type="text/javascript" language="JavaScript"><!--
+           
+        if (self != top) {
+            // loaded in frames
+            document.write('<a href="'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="'+self.location+'" target="_top">Hide TOC<\/a>');
+        }
+        else {
+            // not loaded frames
+            document.write('<a href="../index.html?'+self.location+'" target="_top"><img src="../Resources/Images/show_toc_icon.gif" width="15" height="14" border="0" style="margin-bottom: -2px;" alt=""><\/a> <a href="../index.html?'+self.location+'" target="_top">Show TOC<\/a>');
+        }
+        //--></script>
+        <!-- end Show/Hide frames -->
+
+        </td><td align=right>
+        
+        <a href="chapter_4_section_1.html" target="_self">&lt; Previous Page</a><span style="margin-left: 8px"><a href="chapter_4_section_3.html" target="_self">Next Page &gt;</a></span>
+        
+        </td>
+        </tr></table>
+
+        <br><hr><div align="center"><p class="content_text"> <!--#if expr="0=1" -->&#x00a9; 2007 Apple Inc. All Rights Reserved. &#40;<!--#endif -->Last updated: 2007-12-04<!--#if expr="0=1" -->&#041;<!--#endif --></p></div>
+
+        
+        <!-- start of footer -->
+        <!--#include virtual="/includes/reflibfeedback" -->
+        <!--#include virtual="/includes/framesetfooter" -->
+        <!-- end of footer -->
+    </BODY>
+</html>
